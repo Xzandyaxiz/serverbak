@@ -1,0 +1,46 @@
+options:
+    Prefix: &9&lE&9xplosive&9&lB&9ow>
+    NoPerm: &cPay attention! You don't have permissions to do this!
+    PermExplode: arrows.explode
+    PermLaunchShot: arrows.launch
+    GetBow: explosivebot.get
+    Author: LoryPandaMC
+    Version: WORK IN PROGRESS
+    NameBow: &c&lExplosive Bow
+    MsgOnShoot: &aEnjoy the KA-BOOM!
+
+
+
+on shoot:
+    shooter is a player
+    projectile is an arrow
+    set {arrows::%projectile%} to true
+
+
+on projectile hit:
+    {arrows::%projectile%} is true
+    delete {arrows::%projectile%}
+    delete projectile
+
+
+on projectile hit:
+    projectile is an arrow
+    if shooter has permission "{@PermExplode}":
+        if {explode.%shooter%} is true:	
+            create explosion of force 3 at projectile
+            set {explode.%shooter%} to false
+            stop
+on join:
+    set {explode.%player%} to false
+on shoot:
+    name of shooter's tool is "{@NameBow}"
+    shooter has permission "{@PermLaunchShot}"
+    set {explode.%shooter%} to true
+
+command /explosivebow:
+    trigger:
+        if player has permission "{@GetBow}":
+            give bow named "{@NameBow}" to player
+            message "{@Prefix} {@MsgOnShoot}"
+        else:
+            message "{@Prefix} {@NoPerm}"

@@ -1,0 +1,10 @@
+on right click:
+  if uncolored name of player's tool is "Handgrenade":
+    remove 1 green candle from player's inventory
+
+    summon an snowball at player's location
+    push last spawned snowball in player's direction at speed 0.7
+
+on projectile hit:
+  if projectile is snowball:
+    create explosion of force 2 at location of projectile

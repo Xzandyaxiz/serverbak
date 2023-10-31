@@ -1,0 +1,11 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.7.1
+
+activate, boolean, 00
+x_diff, double, 3F4B0D2979000000
+x_dir, double, 409D0E4BA412117C
+z_diff, double, 3FCA8C125BE56000
+z_dir, double, 4090BD8DEC3D1C10
+

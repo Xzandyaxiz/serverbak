@@ -1,0 +1,6 @@
+command /cave:
+  trigger:
+    set block at location at 2089, 88, 1005 in world "acnmap" to redstone block
+
+    loop all players:
+      teleport loop-player to location 2063, 79, 1002 in world "acnmap"

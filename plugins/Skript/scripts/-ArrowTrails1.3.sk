@@ -1,0 +1,87 @@
+on shoot:
+	shooter has permission "explode.shoot"
+	projectile is arrow
+	set {es.%shooter%} to 1
+	if {explode.%shooter%} is 1:
+		loop 1000 times:
+			if {es.%shooter%} is 1:
+				wait 0.03 seconds
+				create a fake explosion at location of projectile
+		
+on shoot:
+	shooter has permission "fire.shoot"
+	projectile is arrow
+	set {fs.%shooter%} to 1
+	if {fire.%shooter%} is 1:
+		loop 1000 times:
+			if {fs.%shooter%} is 1:
+				wait 0.03 seconds
+				play mob spawner flames at location of projectile
+			
+on shoot:
+	shooter has permission "endersignal.shoot"
+	projectile is arrow
+	set {ess.%shooter%} to 1
+	if {endersignal.%shooter%} is 1:
+		loop 1000 times:
+			if {on.%shooter%} is 1:
+				wait 0.03 seconds
+				play ender signal at location of projectile
+				
+on shoot:
+	shooter has permission "smoke.shoot"
+	projectile is arrow
+	set {ss.%shooter%} to 1
+	if {smoke.%shooter%} is 1:
+		loop 1000 times:
+			if {ss.%shooter%} is 1:
+				wait 0.03 seconds
+				play smoke at location of projectile
+				
+on projectile hit:
+	projectile is arrow
+	set {ess.%shooter%} to 0
+	
+on projectile hit:
+	projectile is arrow
+	set {fs.%shooter%} to 0
+	
+on projectile hit:
+	projectile is arrow
+	set {es.%shooter%} to 0
+	
+on projectile hit:
+	projectile is arrow
+	set {ss.%shooter%} to 0
+	
+command /arrow <text> <text>:
+	permission: arrow.particle
+	trigger:
+		if arg 1 is "fire":
+			if arg 2 is "on":
+				set {fire.%player%} to 1
+				message "&6Fire &7particle effect has been turned &aon"
+			if arg 2 is "off":
+				set {fire.%player%} to 0
+				message "&6Fire &7particle effect has been turned &4off"
+		if arg 1 is "explode":
+			if arg 2 is "on":
+				set {explode.%player%} to 1
+				message "&6Explode &7particle effect has been turned &aon"
+			if arg 2 is "off":
+				set {explode.%player%} to 0
+				message "&6Explode &7particle effect has been turned &4off"
+		if arg 1 is "endersignal":
+			if arg 2 is "on":
+				set {endersignal.%player%} to 1
+				message "&6EnderSignal &7particle effect has been turned &aon"
+			if arg 2 is "off":
+				set {endersignal.%player%} to 0
+				message "&6EnderSignal &7particle effect has been turned &4off"
+		if arg 1 is "smoke":
+			if arg 2 is "on":
+				set {smoke.%player%} to 1
+				message "&6Smoke &7particle effect has been turned &aon"
+			if arg 2 is "off":
+				set {smoke.%player%} to 0
+				message "&6Smoke &7particle effect has been turned &4off"
