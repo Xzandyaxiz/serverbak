@@ -1,11 +1,16 @@
 command /ammogen <boolean>:
   trigger:
     set {activate} to arg-1
-    broadcast "Ammunition generation is now %arg-1%"
 
-every 2 seconds:
+every 3.5 seconds:
   if {activate} is true:
     set {_random_x} to a random integer between 2173 and 2195
     set {_random_z} to a random integer between 1024 and 1082
       
     drop 1 prismarine crystals at location {_random_x}, 90, {_random_z} in world "acnmap"
+
+    set {_random_x} to a random integer between 2173 and 2195
+    set {_random_z} to a random integer between 1024 and 1082
+      
+    drop 1 smithing template named "Leap - Power" at location {_random_x}, 90, {_random_z} in world "acnmap"
+

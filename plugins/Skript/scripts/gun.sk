@@ -3,26 +3,36 @@ on right click with iron hoe:
     if player is not sneaking:
       if player has a ghast tear:
         raycast(player, 700, 3)
+        recoil(player, 2)
         remove a ghast tear from player's inventory
       
       else:
         send "Out of ammo!" to player
 
 on right click:
-
   if player is sneaking:
     if player's tool is an iron hoe:
       if uncolored name of player's tool is "AK47":
-        if player doesn't have ghast tear:
-          if player has prismarine crystals:
+        reload(player, 32)
 
-            remove a prismarine crystals from player's inventory
-            send "Reloading!" to player
-            loop 32 times:
-              wait 0.05 seconds
-              give player a ghast tear
+function recoil(p: player, s: number):
+  set {_loc} to {_p}'s location
+  subtract {_s} from {_loc}'s pitch
+  teleport {_p} to {_loc}
+
+function reload(p: player, ammo: number):
+  if {_p} doesn't have ghast tear:
+    if {_p} has prismarine crystals:
+      remove a prismarine crystals from {_p}'s inventory
+      send "Reloading!" to {_p}
+      loop {_ammo} times:
+        wait 0.05 seconds
+        give {_p} a ghast tear
 
 function raycast(p: player, length: number, dmg: number):
+  loop 10 times:
+    play sound "entity.firework_rocket.blast" at {_p}
+
   set {_x} to 0
   set {_l} to 0
 
@@ -58,7 +68,6 @@ function raycast(p: player, length: number, dmg: number):
       
       if loop-block is not tall grass, short grass, snow layer, air, scaffolding, spruce fence, oak fence, stone button, sandstone slab, cut sandstone slab, smooth sandstone slab, spruce door, vines, ladder, jungle leaves, acacia sapling, dead bush, string, smooth sandstone stairs, lantern or water:
         
-        play sound "entity.firework_rocket.blast" at {_p}
         play sound "block.stone.break" at {_rg%{_x}%}
 
         show 5 white dust at {_rg%{_x}%}

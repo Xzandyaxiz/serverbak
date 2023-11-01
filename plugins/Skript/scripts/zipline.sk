@@ -1,0 +1,25 @@
+command /zipladd <number> <number> <number> <number>:
+  trigger:
+    add arg-1 to {ziplist_x::*}
+    add arg-2 to {ziplist_x_2::*}
+    add arg-3 to {ziplist_z::*}
+    add arg-4 to {ziplist_z_2::*}
+
+on vehicle enter:
+  set {_x} to 0
+  set {_l} to 0
+
+  loop 50 times:
+    add 1 to {_x}
+    add 0.25 to {_l}
+
+    set {_rg%{_x}%} to location {_l} meters infront of player
+    set {_rg%{_x}%} to location 1.25 meters above {_rg%{_x}%}
+
+  set {_x} to 0
+  
+  loop 50 times:
+    wait 0.1 seconds
+    play crit at {_rg%{_x}%}
+
+    add 1 to {_x}

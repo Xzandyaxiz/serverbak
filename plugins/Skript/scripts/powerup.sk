@@ -15,13 +15,6 @@ on right click:
       add {x_diff} to {x_dir}
       add {y_diff} to {y_dir}
 
-      send "%{x_dir}%" to player
-      send "%{z_dir}%" to player
-      
-      send "%player's x location%" to player
-      send "%player's z location%" to player
-
-
       push player up with force 1.4
 
       push player in direction of {x_dir} with force 4

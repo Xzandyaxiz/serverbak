@@ -1,301 +1,110 @@
-[14:17:33] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[14:17:34] [ServerMain/INFO]: Loaded 7 recipes
-[14:17:34] [Server thread/INFO]: Starting minecraft server version 1.20.2
-[14:17:34] [Server thread/INFO]: Loading properties
-[14:17:34] [Server thread/INFO]: This server is running Paper version git-Paper-260 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 1865625)
-[14:17:35] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[14:17:35] [Server thread/INFO]: Using 4 threads for Netty based IO
-[14:17:35] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[21:44:00] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:44:01] [ServerMain/INFO]: Loaded 7 recipes
+[21:44:01] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[21:44:01] [Server thread/INFO]: Loading properties
+[21:44:01] [Server thread/INFO]: This server is running Paper version git-Paper-260 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 1865625)
+[21:44:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:44:01] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:44:01] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[14:17:35] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[14:17:35] [Server thread/INFO]: Default game type: CREATIVE
-[14:17:35] [Server thread/INFO]: Generating keypair
-[14:17:35] [Server thread/INFO]: Starting Minecraft server on *:25565
-[14:17:35] [Server thread/INFO]: Using epoll channel type
-[14:17:35] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[14:17:35] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[14:17:35] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.1
-[14:17:35] [Server thread/INFO]: [SkQuery] Loading server plugin SkQuery v4.1.10
-[14:17:35] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.17+6544-56d0383
-[14:17:35] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@8fc6e82]
-[14:17:35] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[14:17:35] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.17+6544-56d0383
-[14:17:35] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[14:17:35] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[14:17:35] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R2.PaperweightAdapter as the Bukkit adapter
-[14:17:36] [Server thread/INFO]: Preparing level "acnmap"
-[14:17:36] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[14:17:37] [Server thread/INFO]: Time elapsed: 178 ms
-[14:17:37] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[14:17:37] [Server thread/INFO]: Time elapsed: 35 ms
-[14:17:37] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[14:17:37] [Server thread/INFO]: Time elapsed: 17 ms
-[14:17:37] [Server thread/INFO]: [Skript] Enabling Skript v2.7.1
-[14:17:38] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[14:17:41] [Server thread/INFO]: [Skript] Loaded 232540 aliases in 3728ms
-[14:17:41] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[14:17:41] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.10
-[14:17:41] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
-[14:17:41] [Server thread/INFO]: [skQuery] Beginning to process a total of 117 from SkQuery
-[14:17:41] [Server thread/INFO]: [skQuery] Out of 117 classes, 117 classes were loaded from SkQuery
-[14:17:41] [Server thread/INFO]: Running delayed init tasks
-[14:17:41] [Server thread/INFO]: [Skript] Loading variables...
-[14:17:41] [Server thread/INFO]: [Skript] Loaded 5 variables in 0.0 seconds
-[14:17:41] [Server thread/INFO]: [Skript] All scripts loaded without errors.
-[14:17:41] [Server thread/INFO]: [Skript] Loaded 7 scripts with a total of 12 structures in 0.37 seconds
-[14:17:41] [Server thread/INFO]: [Skript] Finished loading.
-[14:17:41] [Server thread/INFO]: Done (7.060s)! For help, type "help"
-[14:17:41] [Server thread/INFO]: Timings Reset
-[14:18:27] [User Authenticator #0/INFO]: UUID of player AverageLoaf is 101a1cf0-3513-4cc1-b2b3-37403c142a7c
-[14:18:27] [Server thread/INFO]: AverageLoaf joined the game
-[14:18:27] [Server thread/INFO]: AverageLoaf[/195.67.215.236:34324] logged in with entity id 29 at ([acnmap]2099.8638982441857, 96.74366438611462, 993.6008692150174)
-[14:18:46] [User Authenticator #0/INFO]: UUID of player Xyandzaxis is 496e7295-e310-4bb0-a1e2-335675dbdd6c
-[14:18:46] [Server thread/INFO]: Xyandzaxis joined the game
-[14:18:46] [Server thread/INFO]: Xyandzaxis[/100.76.106.11:32790] logged in with entity id 33 at ([acnmap]2090.7451094613825, 92.03264306031436, 1007.0709893762773)
-[14:20:25] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard objectives add Winner dummy
-[14:20:25] [Server thread/INFO]: [AverageLoaf: Created new objective [Winner]]
-[14:21:53] [Server thread/INFO]: AverageLoaf issued server command: /execute store result score @a Winner if entity @a[gamemode=adventure]
-[14:21:58] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:21:58] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:22:01] [Server thread/INFO]: AverageLoaf issued server command: /execute store result score @a Winner if entity @a[gamemode=adventure]
-[14:22:05] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:22:05] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:22:14] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:22:14] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:22:17] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:22:17] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:24:57] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard objectives setdisplay sidebar.team.blue Winner
-[14:24:57] [Server thread/INFO]: [AverageLoaf: Set display slot sidebar.team.blue to show objective Winner]
-[14:25:10] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard objectives setdisplay sidebar Winner
-[14:25:10] [Server thread/INFO]: [AverageLoaf: Set display slot sidebar to show objective Winner]
-[14:25:23] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:25:23] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:25:28] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:25:28] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:25:43] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:25:43] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:25:50] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:25:50] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:25:56] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:25:56] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:26:00] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:26:00] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:26:34] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:34] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:35] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:35] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:35] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:35] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:35] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:35] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:36] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:36] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:36] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:36] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:36] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:36] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:49] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard players reset AverageLoaf Winner
-[14:26:49] [Server thread/INFO]: [AverageLoaf: Reset [Winner] for AverageLoaf]
-[14:26:54] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:26:54] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:26:54] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:54] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:54] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:55] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:56] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:57] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:58] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:26:59] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:27:00] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #2/INFO]: [Not Secure] [@] hello
-[14:27:00] [Async Chat Thread - #1/INFO]: [Not Secure] [@] hello
-[14:27:09] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard players reset AverageLoaf
-[14:27:09] [Server thread/INFO]: [AverageLoaf: Reset all scores for AverageLoaf]
-[14:27:13] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard players reset Xyandzaxis
-[14:27:13] [Server thread/INFO]: [AverageLoaf: Reset all scores for Xyandzaxis]
-[14:27:18] [Server thread/INFO]: AverageLoaf issued server command: /gamemode adventure
-[14:27:18] [Server thread/INFO]: [AverageLoaf: Set own game mode to Adventure Mode]
-[14:27:26] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:27:26] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:28:57] [Server thread/INFO]: Ammunition generation is now false
-[14:28:58] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:28:58] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:28:59] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
-[14:28:59] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
-[14:29:02] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:29:02] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:29:07] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode survival
-[14:29:07] [Server thread/INFO]: [Xyandzaxis: Set own game mode to Survival Mode]
-[14:29:18] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode creative
-[14:29:18] [Server thread/INFO]: [Xyandzaxis: Set own game mode to Creative Mode]
-[14:29:24] [Server thread/INFO]: Xyandzaxis issued server command: /tp ~ 100 ~
-[14:29:24] [Server thread/INFO]: [Xyandzaxis: Teleported Xyandzaxis to 2059.780714, 100.000000, 1001.152158]
-[14:29:24] [Server thread/WARN]: Xyandzaxis moved too quickly! 0.0,21.0,0.0
-[14:29:35] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard players reset @a
-[14:29:35] [Server thread/INFO]: [AverageLoaf: Reset all scores for 2 entities]
-[14:32:39] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard objectives list
-[14:32:44] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard objectives remove Winner
-[14:32:44] [Server thread/INFO]: [AverageLoaf: Removed objective [Winner]]
-[14:32:53] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard objectives add Winner dummy
-[14:32:53] [Server thread/INFO]: [AverageLoaf: Created new objective [Winner]]
-[14:34:06] [Server thread/INFO]: AverageLoaf issued server command: /cave
-[14:34:06] [Server thread/WARN]: AverageLoaf moved too quickly! -32.349365002996365,-16.365870244925503,-7.519557215980171
-[14:34:06] [Server thread/WARN]: Xyandzaxis moved too quickly! -43.37627391101432,-11.493907480229481,1.4235628975304735
-[14:34:06] [Server thread/WARN]: AverageLoaf moved too quickly! -32.349365002996365,-16.365870244925503,-7.519557215980171
-[14:34:06] [Server thread/WARN]: AverageLoaf moved too quickly! -32.349365002996365,-16.365870244925503,-7.519557215980171
-[14:34:06] [Server thread/WARN]: Xyandzaxis moved too quickly! -43.37627391101432,-11.493907480229481,1.4235628975304735
-[14:34:06] [Server thread/WARN]: Xyandzaxis moved too quickly! -43.37627391101432,-11.493907480229481,1.4235628975304735
-[14:34:07] [Server thread/INFO]: Ammunition generation is now false
-[14:34:15] [Server thread/INFO]: Ammunition generation is now true
-[14:34:24] [Server thread/INFO]: l bozo
-[14:34:24] [Server thread/INFO]: AverageLoaf died
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Shepherd'/952, uuid='5e43207b-ffd8-46c3-95df-ca3780984f5b', l='ServerLevel[acnmap]', x=2173.51, y=64.00, z=1079.58, cpos=[135, 67], tl=330, v=true] died, message: 'Shepherd was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Farmer'/948, uuid='0eceb690-d945-4a7d-b23e-7847952a60dd', l='ServerLevel[acnmap]', x=2176.04, y=64.00, z=1074.01, cpos=[136, 67], tl=334, v=true] died, message: 'Farmer was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Leatherworker'/949, uuid='c5b6a7fe-cf6d-4a09-b146-cbafdb5182e5', l='ServerLevel[acnmap]', x=2195.39, y=64.06, z=1069.91, cpos=[137, 66], tl=332, v=true] died, message: 'Leatherworker was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Fisherman'/947, uuid='2b1aeae5-3e10-4030-9616-6a125387be5e', l='ServerLevel[acnmap]', x=2177.07, y=65.00, z=1069.75, cpos=[136, 66], tl=336, v=true] died, message: 'Fisherman was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Villager'/950, uuid='ea0eaa0e-e7d2-4e30-a4a6-f0371c5e5e38', l='ServerLevel[acnmap]', x=2182.24, y=65.00, z=1065.50, cpos=[136, 66], tl=330, v=true] died, message: 'Villager was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Farmer'/946, uuid='c7e93ec1-65dc-463d-8027-4d52dab66a13', l='ServerLevel[acnmap]', x=2185.77, y=64.00, z=1075.44, cpos=[136, 67], tl=338, v=true] died, message: 'Farmer was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Butcher'/951, uuid='7d962487-db09-41fb-8b07-de99b18f896a', l='ServerLevel[acnmap]', x=2184.47, y=64.00, z=1076.87, cpos=[136, 67], tl=330, v=true] died, message: 'Butcher was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Villager EntityVillager['Villager'/945, uuid='9ba13176-3173-4ba3-b924-33e606772a35', l='ServerLevel[acnmap]', x=2179.30, y=64.00, z=1060.70, cpos=[136, 66], tl=340, v=true] died, message: 'Villager was killed'
-[14:34:27] [Server thread/INFO]: l bozo
-[14:34:27] [Server thread/INFO]: Ammunition generation is now false
-[14:34:32] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:34:32] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:34:32] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
-[14:34:33] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
-[14:34:36] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
-[14:34:36] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
-[14:34:50] [Async Chat Thread - #3/INFO]: <AverageLoaf> scoreboard players reset @a Winner
-[14:34:53] [Server thread/INFO]: AverageLoaf issued server command: /scoreboard players reset @a Winner
-[14:34:53] [Server thread/INFO]: [AverageLoaf: Reset [Winner] for 2 entities]
-[14:36:01] [Server thread/INFO]: AverageLoaf issued server command: /cave
-[14:36:01] [Server thread/WARN]: AverageLoaf moved too quickly! -32.82413699206609,-11.492902464507765,9.871285049173139
-[14:36:01] [Server thread/WARN]: AverageLoaf moved too quickly! -32.82413699206609,-11.492902464507765,9.871285049173139
-[14:36:02] [Server thread/INFO]: Ammunition generation is now false
+[21:44:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[21:44:01] [Server thread/INFO]: Default game type: CREATIVE
+[21:44:01] [Server thread/INFO]: Generating keypair
+[21:44:01] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:44:01] [Server thread/INFO]: Using epoll channel type
+[21:44:01] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:44:01] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[21:44:01] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.1
+[21:44:01] [Server thread/INFO]: [SkQuery] Loading server plugin SkQuery v4.1.10
+[21:44:01] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.17+6544-56d0383
+[21:44:02] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@30672fbe]
+[21:44:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:44:02] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.17+6544-56d0383
+[21:44:02] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[21:44:02] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[21:44:02] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R2.PaperweightAdapter as the Bukkit adapter
+[21:44:03] [Server thread/INFO]: Preparing level "acnmap"
+[21:44:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:44:03] [Server thread/INFO]: Time elapsed: 213 ms
+[21:44:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:44:03] [Server thread/INFO]: Time elapsed: 46 ms
+[21:44:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:44:03] [Server thread/INFO]: Time elapsed: 38 ms
+[21:44:03] [Server thread/INFO]: [Skript] Enabling Skript v2.7.1
+[21:44:04] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[21:44:07] [Server thread/INFO]: [Skript] Loaded 232540 aliases in 3743ms
+[21:44:08] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[21:44:08] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.10
+[21:44:08] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
+[21:44:08] [Server thread/INFO]: [skQuery] Beginning to process a total of 117 from SkQuery
+[21:44:08] [Server thread/INFO]: [skQuery] Out of 117 classes, 117 classes were loaded from SkQuery
+[21:44:08] [Server thread/INFO]: Running delayed init tasks
+[21:44:08] [Server thread/INFO]: [Skript] Loading variables...
+[21:44:08] [Server thread/INFO]: [Skript] Loaded 9 variables in 0.0 seconds
+[21:44:08] [Server thread/INFO]: [Skript] Line 6: (zipline.sk)
+[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
+[21:44:08] [Server thread/INFO]:     Line: add 1 to {_x}
+[21:44:08] [Server thread/INFO]:  
+[21:44:08] [Server thread/INFO]: [Skript] Line 7: (zipline.sk)
+[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
+[21:44:08] [Server thread/INFO]:     Line: add 0.25 to {_l}
+[21:44:08] [Server thread/INFO]:  
+[21:44:08] [Server thread/INFO]: [Skript] Line 9: (zipline.sk)
+[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
+[21:44:08] [Server thread/INFO]:     Line: set {_rg%{_x}%} to location {_l} meters infront of player
+[21:44:08] [Server thread/INFO]:  
+[21:44:08] [Server thread/INFO]: [Skript] Line 10: (zipline.sk)
+[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
+[21:44:08] [Server thread/INFO]:     Line: set {_rg%{_x}%} to location 1.25 meters above {_rg%{_x}%}
+[21:44:08] [Server thread/INFO]:  
+[21:44:08] [Server thread/INFO]: [Skript] Line 7: (minigun.sk)
+[21:44:08] [Server thread/INFO]:     Delays less than one tick are not possible, defaulting to one tick.
+[21:44:08] [Server thread/INFO]:     Line: wait 0.04 seconds
+[21:44:08] [Server thread/INFO]:  
+[21:44:08] [Server thread/INFO]: [Skript] Line 5: (zipline.sk)
+[21:44:08] [Server thread/INFO]:     Can't understand this condition/effect: loop {_length} times:    add 1 to {_x}
+[21:44:08] [Server thread/INFO]:     Line: loop {_length} times:    add 1 to {_x}
+[21:44:08] [Server thread/INFO]:  
+[21:44:08] [Server thread/INFO]: [Skript] Loaded 8 scripts with a total of 16 structures in 0.38 seconds
+[21:44:08] [Server thread/INFO]: [Skript] Finished loading.
+[21:44:08] [Server thread/INFO]: Done (7.365s)! For help, type "help"
+[21:44:08] [Server thread/INFO]: Timings Reset
+[21:44:37] [User Authenticator #0/INFO]: UUID of player Xyandzaxis is 496e7295-e310-4bb0-a1e2-335675dbdd6c
+[21:44:37] [Server thread/INFO]: Xyandzaxis joined the game
+[21:44:37] [Server thread/INFO]: Xyandzaxis[/[0:0:0:0:0:0:0:1%0]:35412] logged in with entity id 24 at ([acnmap]1018.5, -11.0, 1002.5)
+[21:44:56] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload zipline.sk
+[21:45:15] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload zipline.sk
+[21:48:39] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload zipline.sk
+[21:53:57] [Server thread/INFO]: Stopping the server
+[21:53:57] [Server thread/INFO]: Stopping server
+[21:53:57] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.17+6544-56d0383
+[21:53:57] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[21:53:57] [Server thread/INFO]: [SkQuery] Disabling SkQuery v4.1.10
+[21:53:57] [Server thread/INFO]: [Skript] Disabling Skript v2.7.1
+[21:53:57] [Server thread/INFO]: Saving players
+[21:53:57] [Server thread/INFO]: Xyandzaxis lost connection: Server closed
+[21:53:57] [Server thread/INFO]: Xyandzaxis left the game
+[21:53:58] [Server thread/INFO]: Saving worlds
+[21:53:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[acnmap]'/minecraft:overworld
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'acnmap'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'acnmap'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'acnmap'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saved 59 block chunks, 118 entity chunks, 0 poi chunks in world 'acnmap' in 0.06s
+[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (acnmap): All chunks are saved
+[21:53:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[acnmap_nether]'/minecraft:the_nether
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'acnmap_nether'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'acnmap_nether'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'acnmap_nether'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'acnmap_nether' in 0.00s
+[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:53:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[acnmap_the_end]'/minecraft:the_end
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'acnmap_the_end'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'acnmap_the_end'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'acnmap_the_end'
+[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'acnmap_the_end' in 0.00s
+[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:53:58] [Server thread/INFO]: Flushing Chunk IO
+[21:53:58] [Server thread/INFO]: Closing Thread Pool
+[21:53:58] [Server thread/INFO]: Closing Server
