@@ -1,0 +1,66 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.7.2
+
+0::start_x::0, long, 0000000000000841
+0::start_x::1, long, 000000000000083D
+0::start_x::2, long, 0000000000000867
+0::start_x::3, long, 0000000000000865
+0::start_x::4, long, 0000000000000852
+0::start_x::5, long, 000000000000084F
+0::start_y::0, long, 0000000000000045
+0::start_y::1, long, 0000000000000048
+0::start_y::2, long, 0000000000000043
+0::start_y::3, long, 0000000000000040
+0::start_y::4, long, 0000000000000047
+0::start_y::5, long, 0000000000000044
+0::start_z::0, long, 0000000000000490
+0::start_z::1, long, 00000000000004A9
+0::start_z::2, long, 00000000000004A1
+0::start_z::3, long, 0000000000000489
+0::start_z::4, long, 0000000000000486
+0::start_z::5, long, 000000000000049B
+1::start_x::0, long, 0000000000000887
+1::start_x::1, long, 0000000000000880
+1::start_x::2, long, 0000000000000893
+1::start_x::3, long, 0000000000000893
+1::start_y::0, long, 0000000000000049
+1::start_y::1, long, 0000000000000040
+1::start_y::2, long, 000000000000004C
+1::start_y::3, long, 0000000000000040
+1::start_z::0, long, 0000000000000438
+1::start_z::1, long, 0000000000000419
+1::start_z::2, long, 0000000000000423
+1::start_z::3, long, 000000000000042E
+2::start_x::0, long, 00000000000003FB
+2::start_x::1, long, 000000000000040B
+2::start_x::2, long, 00000000000003ED
+2::start_x::3, long, 00000000000003E1
+2::start_x::4, long, 00000000000003FA
+2::start_y::0, long, FFFFFFFFFFFFFFF4
+2::start_y::1, long, FFFFFFFFFFFFFFFA
+2::start_y::2, long, FFFFFFFFFFFFFFFA
+2::start_y::3, long, FFFFFFFFFFFFFFFB
+2::start_y::4, long, FFFFFFFFFFFFFFF0
+2::start_z::0, long, 00000000000003EB
+2::start_z::1, long, 00000000000003F7
+2::start_z::2, long, 0000000000000413
+2::start_z::3, long, 00000000000003FA
+2::start_z::4, long, 0000000000000403
+activate, boolean, 00
+active, boolean, 00
+i, long, 0000000000000004
+loc, long, 0000000000000003
+p_dir, location, 8605776F726C6480FF0000000181046E616D6520800661636E6D617001780940A07B66666600000179094051C00000000000017A094092B9333334000005706974636808C0AB02250379617708C3130093
+scope, boolean, 00
+spawned::1, long, 0000000000000001
+spawned::2, long, 0000000000000004
+spawned::3, long, 0000000000000000
+spawned::4, long, 0000000000000000
+spawned::5, long, 0000000000000003
+spawned::6, long, 0000000000000003
+spawned::7, long, 0000000000000003
+x_diff, double, 40A07B6666660000
+z_diff, double, 4092B93333340000
+

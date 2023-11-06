@@ -1,0 +1,84 @@
+on join:
+  set {_shooting} to false
+
+on right click with purple dye:
+  if uncolored name of player's tool is "Minigun":
+    if player is not sneaking:
+      if player has a ghast tear:
+        if {_shooting} is false:
+          set {_shooting} to true
+
+          set {_dmg_total} to 1
+
+          loop 20 times:
+
+            wait 0.08 seconds
+            if player has a ghast tear:
+          
+              raycast_minigun(player, 200, 1)
+              remove a ghast tear from player's inventory
+        
+        set {_shooting} to false
+
+      else:
+        send "Out of ammo!" to player
+
+on right click:
+  if player is sneaking:
+    if player's tool is a purple dye:
+      if uncolored name of player's tool is "Minigun":
+        reload(player, 32)
+
+function raycast_minigun(p: player, length: number, dmg: number):
+  loop 10 times:
+    play sound "entity.firework_rocket.blast" at {_p}
+
+  set {_x} to 0
+  set {_l} to 0
+
+  loop {_length} times:   #loops as many times as long as the length from the function input
+    add 1 to {_x}
+    add 0.25 to {_l}
+    set {_rg%{_x}%} to location {_l} meters infront of {_p}
+    set {_rg%{_x}%} to location 1.25 meters above {_rg%{_x}%} #aligns with where player is looking better
+    # all of the locations are saved as soon as the function is called, effects such as particles can be applied afterwards.
+
+
+  set {_x} to 0
+  
+  show 1 red dust at {_rg%{_x}%} #change color or particle type
+
+  loop {_length} times:
+    play crit at {_rg%{_x}%}
+
+    add 1 to {_x}
+  
+    loop entities in radius 1 around {_rg%{_x}%}:
+      add {_dmg} to {_dmg_total}
+
+      loop-entity is not {_p}
+      
+      broadcast "%{_dmg_total}%"
+
+      if {_dmg_total} is greater than 9:
+        damage loop-entity by {_dmg_total}
+      
+      play sound "entity.firework_rocket.blast" at {_p}
+      play sound "block.stone.break" at {_rg%{_x}%}
+
+      show 3 red dust at {_rg%{_x}%}
+
+      stop
+
+    loop blocks in radius 0.7 around {_rg%{_x}%}:
+      
+      if loop-block is not tall grass, short grass, snow layer, air, scaffolding, spruce fence, oak fence, stone button, sandstone slab, cut sandstone slab, smooth sandstone slab, spruce door, vines, ladder, jungle leaves, acacia sapling, dead bush, string, smooth sandstone stairs, lantern or water:
+        
+        if {_dmg_total} is greater than 1:
+          set {_dmg_total} to 1
+
+        play sound "block.stone.break" at {_rg%{_x}%}
+
+        show 5 white dust at {_rg%{_x}%}
+        
+        stop #projectile does not go through blocks, but passes through expected blocks.

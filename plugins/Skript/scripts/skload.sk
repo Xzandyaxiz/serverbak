@@ -1,0 +1,14 @@
+command /skshow <string>:
+  trigger:
+    send "plugins/Skript/scripts/custom/%arg-1%.sk"'s file contents
+
+command /skload <string>:
+  trigger:
+    player's held item is a book and quill:
+      set {_contents} to page 1 of player's held item
+
+      if file "plugins/Skript/scripts/custom/%arg-1%" exists:
+        delete file "plugins/Skript/scripts/custom/%arg-1%.sk"
+        create file "plugins/Skript/scripts/custom/%arg-1%.sk"
+
+      write {_contents} at line 1 to file "plugins/Skript/scripts/custom/%arg-1%.sk"

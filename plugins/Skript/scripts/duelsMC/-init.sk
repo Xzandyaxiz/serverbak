@@ -1,0 +1,102 @@
+on join:
+  clear {players::*}
+
+command /setstart <number> <number> <number> <number> <number>:
+  trigger:
+    set {%arg-1%::start_x::%arg-2%} to arg-3
+    set {%arg-1%::start_y::%arg-2%} to arg-4
+    set {%arg-1%::start_z::%arg-2%} to arg-5
+
+command /init <number>:
+  trigger:
+    wait 0.5 seconds
+
+    set {i} to 0
+    set {active} to false
+    
+    loop all players:
+      add loop-player to {players::*}
+      add 1 to {i}
+    
+    if {i} is 1:
+      broadcast "Minimum of 2 players needed to start the game!"
+      stop
+
+    loop all players:
+      set loop-player's gamemode to spectator
+      
+      clear loop-player's inventory
+      send title "§l§a3" to loop-player
+      play sound "block.note_block.bell" with volume 1.5 with pitch 0.1 to loop-player
+    
+    wait 1 second
+    
+    loop all players:
+      send title "§l§e2" to loop-player
+      play sound "block.note_block.bell" with volume 1.5 with pitch 0.1 to loop-player
+    
+    wait 1 second
+      
+    loop all players:
+      send title "§l§c1" to loop-player
+      play sound "block.note_block.bell" with volume 1.5 with pitch 0.1 to loop-player
+    
+    wait 1 second 
+
+    clear {spawned::*}
+
+    loop all players:
+      send title "§lGo!" to loop-player
+      play sound "block.note_block.bell" with volume 1.5 with pitch 1.1 to loop-player
+
+      set loop-player's gamemode to adventure
+
+      set_spawn_loc(loop-player)
+      teleport loop-player to location {%arg-1%::start_x::%{loc}%}, {%arg-1%::start_y::%{loc}%}, {%arg-1%::start_z::%{loc}%} in world "acnmap" 
+
+    wait 0.5 second
+
+    loop all players:
+      give loop-player 1 magenta dye named "AK47"
+      
+      wait 1 ticks
+      give loop-player 64 ghast tear named "Ammo"      
+      set {active} to true
+
+    execute console command "/ammogen true"
+
+function set_spawn_loc(p: player):
+  set {loc} to a random integer between 0 and {i}
+  loop {spawned::*}:
+    if loop-value is {loc}:
+      set_spawn_loc({_p})
+
+  add {loc} to {spawned::*}
+
+on death of player:
+  clear victim's inventory
+  set victim's gamemode to spectator
+
+on gamemode change to spectator:
+  {active} is true
+  set {_i} to 0
+  
+  loop {players::*}:
+    gamemode of loop-value is adventure
+    add 1 to {_i}
+
+  broadcast "%{_i}%"
+  {_i} is less than 2
+  wait 1 second
+
+  loop all players:
+    clear loop-player's inventory
+    set loop-player's gamemode to adventure
+
+  execute console command "/cave 1908 -23 1084"
+
+  set {active} to false
+  clear {players::*}
+
+  execute console command "/ammogen false"
+  execute console command "/kill @e[type=item]"

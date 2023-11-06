@@ -1,0 +1,9 @@
+on right click:
+  player's held item is a fire charge
+
+  set {_loc} to player's location
+  add 1 to {_loc}'s y location
+
+  spawn a fireball at {_loc}
+  #push fireball in player's direction at speed 2.0
+  remove 1 fire charge from player's inventory

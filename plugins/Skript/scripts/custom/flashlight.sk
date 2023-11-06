@@ -1,0 +1,15 @@
+on right click:
+
+  if item is gray candle:
+
+    if item's name is "Flashlight":
+
+      remove blindness from player
+on right click:
+
+  if item is gray candle:
+
+    if item's name is "Flashlight":
+
+      remove blindness from player
+

@@ -1,0 +1,14 @@
+on right click:
+  if uncolored name of player's tool is "Handgrenade":
+    set {_loc} to player's location
+    add 1.5 to {_loc}'s y location
+
+    spawn an egg at {_loc}
+
+    push last spawned egg in player's direction at speed 0.7
+
+    remove 1 green candle from player's inventory
+
+on projectile hit:
+  if projectile is an egg:
+    create explosion of force 7 at location of projectile

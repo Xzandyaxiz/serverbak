@@ -1,0 +1,17 @@
+on join:
+  set {active} to false
+
+command /init <number>:
+  set {y_max} to arg-1
+  set {y_level} to {y_max}
+  set {active} to true
+
+every second:
+  {activate} is true
+  
+  place red wool at location player's x location, {y_level}, player's z location in world "tetris"
+  add 1 to {y_level}
+  
+  place air at location player's x location, {y_level}, player's z location in world "tetris"
+  subtract 2 from {y_level}
+

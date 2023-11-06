@@ -1,0 +1,31 @@
+command /start:
+  trigger:
+    set {_player} to player's location
+    add 100 to {_player}'s y location
+    
+    teleport player to {_player}
+    
+    set {player} to player
+    set {active} to true
+
+on right click with stick:
+  if name of player's held item is "Wand":
+    block below player is air 
+
+    play crit at location of player
+      
+    push player up with force 10
+    wait 1 tick
+    
+    set {_p} to player's y location
+
+    wait 1 tick
+
+    set {p2} to player's y location
+    subtract {_p} from {p2}
+
+on every 1 tick:
+  if {active} is true:
+    block below {player} is not air
+    send "%{p2}%" to {player}
+    set {active} to false

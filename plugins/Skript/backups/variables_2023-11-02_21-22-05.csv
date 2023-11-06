@@ -1,0 +1,16 @@
+# === Skript's variable storage ===
+# Please do not modify this file manually!
+#
+# version: 2.7.1
+
+activate, boolean, 00
+p_dir, location, 8605776F726C6480FF0000000181046E616D6520800661636E6D617001780940A0FE24C53F38BA01790940519024197A953B017A0940904055588BA21605706974636808418E7DDA0379617708C3054A0B
+x_diff, double, 40A0FE1D7A37D32D
+x_dir, double, 40A0FDB5BA48799D
+z_diff, double, 409040ADA8658F9E
+z_dir, double, 4090D5A59D234AC6
+ziplist_x::1, long, 000000000000000A
+ziplist_x_2::1, long, 000000000000000A
+ziplist_z::1, long, 000000000000000A
+ziplist_z_2::1, long, 000000000000000A
+

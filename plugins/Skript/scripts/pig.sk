@@ -1,0 +1,48 @@
+# Reset everytime skript reloads
+#on join:
+#  clear {players::*}
+#  clear {p_timer::*}
+
+#every 1 second:
+#  loop {p_timer::*}:
+#    if loop-value is 0:
+#      delete {p_iter::%loop-value%}
+#      delete {players::%loop-index%}
+#
+#    subtract 1 from {p_timer::%loop-value%}
+
+on right click:
+  player's held item is yellow dye
+  uncolored name of player's tool is "Launch thy pig!"
+  
+  #set {_active} to false
+
+ # loop {players::*}:
+ #   if player is loop-value:
+ #     stop # Exit if cooldown is still not met
+#
+  #{_active} is true
+
+  loop 30 times:
+    wait 1 tick
+
+    spawn_pig(player)
+
+function spawn_pig(p: player):
+  set {_loc} to {_p}'s location
+  add 1.5 to {_loc}'s y location
+
+  spawn an iron golem 1 block infront of {_loc}
+
+  push last spawned iron golem in {_p}'s direction at speed 7
+  
+  add 3 to {p_timer}
+
+every 1 tick:
+  loop all entities:
+    loop-entity is not a player
+    loop-entity is an iron golem
+    block below loop-entity is not air
+    
+    #create explosion of force 0.1 at location of loop-entity
+    kill loop-entity

@@ -1,0 +1,91 @@
+on join:
+  set {scope} to false
+
+on right click with magenta dye:
+  uncolored name of player's tool is "AK47"
+  player is not sneaking
+  player has a ghast tear
+    
+  raycast(player, 700, 3)
+  recoil(player, 3)
+
+  remove a ghast tear from player's inventory
+      
+  player does not have a ghast tear
+  send "Out of ammo!" to player
+
+on right click:
+  player is sneaking
+  player's tool is a magenta dye
+  uncolored name of player's tool is "AK47"
+  
+  reload(player, 32)
+
+on left click with magenta dye:
+  if uncolored name of player's tool is "AK47":
+    if {scope} is true:
+      set {scope} to false
+      execute console command "effect clear %player%"
+
+    else if {scope} is false:
+      set {scope} to true
+      apply slowness 255 to player for 999999 seconds
+
+function recoil(p: player, s: number):
+  set {_loc} to {_p}'s location
+  subtract {_s} from {_loc}'s pitch
+  teleport {_p} to {_loc}
+
+function reload(p: player, ammo: number):
+  {_p} doesn't have ghast tear
+  {_p} has prismarine crystals
+  
+  remove a prismarine crystals from {_p}'s inventory
+  send "Reloading!" to {_p}
+  
+  loop {_ammo} times:
+    wait 0.05 seconds
+    give {_p} 1 ghast tear
+
+function raycast(p: player, length: number, dmg: number):
+  loop 10 times:
+    play sound "entity.firework_rocket.blast" at {_p}
+
+  set {_x} to 0
+  set {_l} to 0
+
+  loop {_length} times:
+    add 1 to {_x}
+    add 0.25 to {_l}
+    set {_rg%{_x}%} to location {_l} meters infront of {_p}
+    set {_rg%{_x}%} to location 1.25 meters above {_rg%{_x}%}
+
+  set {_x} to 0
+  
+  show 1 red dust at {_rg%{_x}%}
+
+  loop {_length} times:
+    #play crit at {_rg%{_x}%}
+
+    add 1 to {_x}
+  
+    loop entities in radius 1 around {_rg%{_x}%}:
+      loop-entity is not {_p}
+      damage loop-entity by {_dmg}
+      
+      play sound "entity.firework_rocket.blast" at {_p}
+      play sound "block.stone.break" at {_rg%{_x}%}
+
+      show 3 red dust at {_rg%{_x}%}
+
+      stop
+
+    loop blocks in radius 0.7 around {_rg%{_x}%}:
+      
+      loop-block is not tall grass, short grass, snow layer, air, scaffolding, spruce fence, oak fence, stone button, sandstone slab, cut sandstone slab, smooth sandstone slab, spruce door, vines, ladder, jungle leaves, acacia sapling, dead bush, string, smooth sandstone stairs, lantern or water
+        
+      play sound "block.stone.break" at {_rg%{_x}%} 
+
+      show 5 white dust at {_rg%{_x}%}
+        
+      stop

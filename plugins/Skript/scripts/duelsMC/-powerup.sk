@@ -1,0 +1,21 @@
+on right click:
+  player's tool is smithing template
+  uncolored name of player's tool is "Leap - Power"
+      
+  block below player is not air
+
+  set {x_diff} to player's x location
+  set {z_diff} to player's z location
+
+  wait 1 tick
+      
+  set {p_dir} to player's location
+
+  loop 5 times:
+    wait 1 ticks
+    play crit at location of player
+    push player up with force 0.3
+
+  push player in direction of {p_dir} with force 4
+
+  remove smithing template from player's inventory

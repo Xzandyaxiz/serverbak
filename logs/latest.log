@@ -1,110 +1,348 @@
-[21:44:00] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[21:44:01] [ServerMain/INFO]: Loaded 7 recipes
-[21:44:01] [Server thread/INFO]: Starting minecraft server version 1.20.2
-[21:44:01] [Server thread/INFO]: Loading properties
-[21:44:01] [Server thread/INFO]: This server is running Paper version git-Paper-260 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 1865625)
-[21:44:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[21:44:01] [Server thread/INFO]: Using 4 threads for Netty based IO
-[21:44:01] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[21:08:57] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[21:08:57] [ServerMain/INFO]: Loaded 7 recipes
+[21:08:57] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[21:08:57] [Server thread/INFO]: Loading properties
+[21:08:57] [Server thread/INFO]: This server is running Paper version git-Paper-279 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 274e54b)
+[21:08:58] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[21:08:58] [Server thread/INFO]: Using 4 threads for Netty based IO
+[21:08:58] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[21:44:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[21:44:01] [Server thread/INFO]: Default game type: CREATIVE
-[21:44:01] [Server thread/INFO]: Generating keypair
-[21:44:01] [Server thread/INFO]: Starting Minecraft server on *:25565
-[21:44:01] [Server thread/INFO]: Using epoll channel type
-[21:44:01] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[21:44:01] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[21:44:01] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.1
-[21:44:01] [Server thread/INFO]: [SkQuery] Loading server plugin SkQuery v4.1.10
-[21:44:01] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.17+6544-56d0383
-[21:44:02] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@30672fbe]
-[21:44:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[21:44:02] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.17+6544-56d0383
-[21:44:02] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
-[21:44:02] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
-[21:44:02] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R2.PaperweightAdapter as the Bukkit adapter
-[21:44:03] [Server thread/INFO]: Preparing level "acnmap"
-[21:44:03] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[21:44:03] [Server thread/INFO]: Time elapsed: 213 ms
-[21:44:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[21:44:03] [Server thread/INFO]: Time elapsed: 46 ms
-[21:44:03] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[21:44:03] [Server thread/INFO]: Time elapsed: 38 ms
-[21:44:03] [Server thread/INFO]: [Skript] Enabling Skript v2.7.1
-[21:44:04] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[21:44:07] [Server thread/INFO]: [Skript] Loaded 232540 aliases in 3743ms
-[21:44:08] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[21:44:08] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.10
-[21:44:08] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
-[21:44:08] [Server thread/INFO]: [skQuery] Beginning to process a total of 117 from SkQuery
-[21:44:08] [Server thread/INFO]: [skQuery] Out of 117 classes, 117 classes were loaded from SkQuery
-[21:44:08] [Server thread/INFO]: Running delayed init tasks
-[21:44:08] [Server thread/INFO]: [Skript] Loading variables...
-[21:44:08] [Server thread/INFO]: [Skript] Loaded 9 variables in 0.0 seconds
-[21:44:08] [Server thread/INFO]: [Skript] Line 6: (zipline.sk)
-[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
-[21:44:08] [Server thread/INFO]:     Line: add 1 to {_x}
-[21:44:08] [Server thread/INFO]:  
-[21:44:08] [Server thread/INFO]: [Skript] Line 7: (zipline.sk)
-[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
-[21:44:08] [Server thread/INFO]:     Line: add 0.25 to {_l}
-[21:44:08] [Server thread/INFO]:  
-[21:44:08] [Server thread/INFO]: [Skript] Line 9: (zipline.sk)
-[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
-[21:44:08] [Server thread/INFO]:     Line: set {_rg%{_x}%} to location {_l} meters infront of player
-[21:44:08] [Server thread/INFO]:  
-[21:44:08] [Server thread/INFO]: [Skript] Line 10: (zipline.sk)
-[21:44:08] [Server thread/INFO]:     indentation error: expected 2 spaces, but found 4 spaces
-[21:44:08] [Server thread/INFO]:     Line: set {_rg%{_x}%} to location 1.25 meters above {_rg%{_x}%}
-[21:44:08] [Server thread/INFO]:  
-[21:44:08] [Server thread/INFO]: [Skript] Line 7: (minigun.sk)
-[21:44:08] [Server thread/INFO]:     Delays less than one tick are not possible, defaulting to one tick.
-[21:44:08] [Server thread/INFO]:     Line: wait 0.04 seconds
-[21:44:08] [Server thread/INFO]:  
-[21:44:08] [Server thread/INFO]: [Skript] Line 5: (zipline.sk)
-[21:44:08] [Server thread/INFO]:     Can't understand this condition/effect: loop {_length} times:    add 1 to {_x}
-[21:44:08] [Server thread/INFO]:     Line: loop {_length} times:    add 1 to {_x}
-[21:44:08] [Server thread/INFO]:  
-[21:44:08] [Server thread/INFO]: [Skript] Loaded 8 scripts with a total of 16 structures in 0.38 seconds
-[21:44:08] [Server thread/INFO]: [Skript] Finished loading.
-[21:44:08] [Server thread/INFO]: Done (7.365s)! For help, type "help"
-[21:44:08] [Server thread/INFO]: Timings Reset
-[21:44:37] [User Authenticator #0/INFO]: UUID of player Xyandzaxis is 496e7295-e310-4bb0-a1e2-335675dbdd6c
-[21:44:37] [Server thread/INFO]: Xyandzaxis joined the game
-[21:44:37] [Server thread/INFO]: Xyandzaxis[/[0:0:0:0:0:0:0:1%0]:35412] logged in with entity id 24 at ([acnmap]1018.5, -11.0, 1002.5)
-[21:44:56] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload zipline.sk
-[21:45:15] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload zipline.sk
-[21:48:39] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload zipline.sk
-[21:53:57] [Server thread/INFO]: Stopping the server
-[21:53:57] [Server thread/INFO]: Stopping server
-[21:53:57] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.17+6544-56d0383
-[21:53:57] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
-[21:53:57] [Server thread/INFO]: [SkQuery] Disabling SkQuery v4.1.10
-[21:53:57] [Server thread/INFO]: [Skript] Disabling Skript v2.7.1
-[21:53:57] [Server thread/INFO]: Saving players
-[21:53:57] [Server thread/INFO]: Xyandzaxis lost connection: Server closed
-[21:53:57] [Server thread/INFO]: Xyandzaxis left the game
-[21:53:58] [Server thread/INFO]: Saving worlds
-[21:53:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[acnmap]'/minecraft:overworld
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'acnmap'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'acnmap'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'acnmap'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saved 59 block chunks, 118 entity chunks, 0 poi chunks in world 'acnmap' in 0.06s
-[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (acnmap): All chunks are saved
-[21:53:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[acnmap_nether]'/minecraft:the_nether
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'acnmap_nether'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'acnmap_nether'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'acnmap_nether'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'acnmap_nether' in 0.00s
-[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[21:53:58] [Server thread/INFO]: Saving chunks for level 'ServerLevel[acnmap_the_end]'/minecraft:the_end
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'acnmap_the_end'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'acnmap_the_end'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'acnmap_the_end'
-[21:53:58] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 0 entity chunks, 0 poi chunks in world 'acnmap_the_end' in 0.00s
-[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[21:53:58] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[21:53:58] [Server thread/INFO]: Flushing Chunk IO
-[21:53:58] [Server thread/INFO]: Closing Thread Pool
-[21:53:58] [Server thread/INFO]: Closing Server
+[21:08:58] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[21:08:58] [Server thread/INFO]: Default game type: CREATIVE
+[21:08:58] [Server thread/INFO]: Generating keypair
+[21:08:58] [Server thread/INFO]: Starting Minecraft server on *:25565
+[21:08:58] [Server thread/INFO]: Using epoll channel type
+[21:08:58] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[21:08:58] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[21:08:58] [Server thread/WARN]: [org.bukkit.craftbukkit.v1_20_R2.legacy.CraftLegacy] Initializing Legacy Material Support. Unless you have legacy plugins and/or data this is a bug!
+[21:09:00] [Server thread/WARN]: Legacy plugin skUtilities v0.9.2 does not specify an api-version.
+[21:09:00] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.2
+[21:09:00] [Server thread/INFO]: [SkQuery] Loading server plugin SkQuery v4.1.10
+[21:09:00] [Server thread/INFO]: [Pesk] Loading server plugin Pesk v1.6
+[21:09:00] [Server thread/INFO]: [plugin] Loading server plugin plugin v0.01
+[21:09:00] [Server thread/INFO]: [WorldEdit] Loading server plugin WorldEdit v7.2.17+6544-56d0383
+[21:09:00] [Server thread/INFO]: Got request to register class com.sk89q.worldedit.bukkit.BukkitServerInterface with WorldEdit [com.sk89q.worldedit.extension.platform.PlatformManager@3c0f56c0]
+[21:09:00] [Server thread/INFO]: [Shopkeepers] Loading server plugin Shopkeepers v2.18.0
+[21:09:00] [Server thread/INFO]: [Shopkeepers] Loaded all plugin classes (158 ms).
+[21:09:00] [Server thread/INFO]: [Shopkeepers] Loading config.
+[21:09:00] [Server thread/INFO]: [Shopkeepers] Loading language file: language-en-default.yml
+[21:09:00] [Server thread/INFO]: [Shopkeepers] Registering defaults.
+[21:09:00] [Server thread/INFO]: [SkJade] Loading server plugin SkJade v1.4.3
+[21:09:00] [Server thread/INFO]: [skUtilities] Loading server plugin skUtilities v0.9.2
+[21:09:00] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[21:09:00] [Server thread/INFO]: [WorldEdit] Enabling WorldEdit v7.2.17+6544-56d0383
+[21:09:00] [Server thread/INFO]: Registering commands with com.sk89q.worldedit.bukkit.BukkitServerInterface
+[21:09:00] [Server thread/INFO]: WEPIF: Using the Bukkit Permissions API.
+[21:09:00] [Server thread/INFO]: Using com.sk89q.worldedit.bukkit.adapter.impl.v1_20_R2.PaperweightAdapter as the Bukkit adapter
+[21:09:01] [Server thread/INFO]: Preparing level "bedwars"
+[21:09:01] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[21:09:01] [Server thread/INFO]: Time elapsed: 91 ms
+[21:09:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[21:09:01] [Server thread/INFO]: Time elapsed: 12 ms
+[21:09:01] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[21:09:01] [Server thread/INFO]: Time elapsed: 7 ms
+[21:09:01] [Server thread/INFO]: [Skript] Enabling Skript v2.7.2
+[21:09:02] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[21:09:05] [Server thread/INFO]: [Skript] Loaded 232530 aliases in 3403ms
+[21:09:05] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[21:09:05] [Server thread/INFO]: [SkQuery] Enabling SkQuery v4.1.10
+[21:09:05] [Server thread/INFO]: [skQuery] Locating classes from SkQuery...
+[21:09:05] [Server thread/INFO]: [skQuery] Beginning to process a total of 117 from SkQuery
+[21:09:05] [Server thread/INFO]: [skQuery] Out of 117 classes, 117 classes were loaded from SkQuery
+[21:09:05] [Server thread/INFO]: [Pesk] Enabling Pesk v1.6
+[21:09:05] [Server thread/INFO]: MetricsLite has been loaded id: 9344
+[21:09:05] [Server thread/INFO]: §9Done - 17 ms
+[21:09:05] [Server thread/INFO]: [plugin] Enabling plugin v0.01
+[21:09:05] [Server thread/INFO]: [plugin] Enabled Bettercmd
+[21:09:05] [Server thread/INFO]: [Shopkeepers] Enabling Shopkeepers v2.18.0
+[21:09:05] [Server thread/INFO]: [Shopkeepers] Loading the data of 1 shopkeepers ...
+[21:09:05] [Server thread/INFO]: [SkJade] Enabling SkJade v1.4.3
+[21:09:05] [Server thread/ERROR]: [SkJade] [STDERR] You are using an unknown version (v1_20_R2). You could be using a version before 1.7, or a newer version I haven't supported.
+[21:09:05] [Server thread/WARN]: Nag author(s): '[Ankoki]' of 'SkJade v1.4.3' about their usage of System.out/err.print. Please use your plugin's logger instead (JavaPlugin#getLogger).
+[21:09:05] [Server thread/WARN]: [SkJade] §fSk§aJade | Could not find any NMS support for 1.4.3! Please note SkJade only supports the latest sub-version of each version above 1.13.
+[21:09:05] [Server thread/WARN]: [SkJade] §fSk§aJade | There is also a chance you are using a version I haven't implemented support for yet.
+[21:09:05] [Server thread/INFO]: [SkJade] §fSk§aJade §f| §7SkJade will remain enabled, however anything using NMS will not be enabled!
+[21:09:05] [Server thread/INFO]: [GuardianBeam] [GuardianBeam] Found server version 1.20.2
+[21:09:05] [Server thread/WARN]: [GuardianBeam] [GuardianBeam] Loaded not matching version of the mappings for your server version (1.20.2)
+[21:09:05] [Server thread/INFO]: [GuardianBeam] [GuardianBeam] Loaded mappings V1_19
+[21:09:05] [Server thread/WARN]: java.lang.NullPointerException: Cannot invoke "Object.getClass()" because "o" is null
+[21:09:05] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.UnsafeFieldAccessorImpl.ensureObj(UnsafeFieldAccessorImpl.java:57)
+[21:09:05] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.UnsafeFloatFieldAccessorImpl.getFloat(UnsafeFloatFieldAccessorImpl.java:64)
+[21:09:05] [Server thread/WARN]: 	at java.base/jdk.internal.reflect.UnsafeFloatFieldAccessorImpl.get(UnsafeFloatFieldAccessorImpl.java:36)
+[21:09:05] [Server thread/WARN]: 	at java.base/java.lang.reflect.Field.get(Field.java:425)
+[21:09:05] [Server thread/WARN]: 	at SkJade.jar//com.ankoki.skjade.elements.lasers.Laser$Packets.getField(Laser.java:1009)
+[21:09:05] [Server thread/WARN]: 	at SkJade.jar//com.ankoki.skjade.elements.lasers.Laser$Packets.<clinit>(Laser.java:748)
+[21:09:05] [Server thread/WARN]: 	at java.base/java.lang.Class.forName0(Native Method)
+[21:09:05] [Server thread/WARN]: 	at java.base/java.lang.Class.forName(Class.java:467)
+[21:09:05] [Server thread/WARN]: 	at Skript.jar//ch.njol.skript.util.Utils.getClasses(Utils.java:201)
+[21:09:05] [Server thread/WARN]: 	at Skript.jar//ch.njol.skript.SkriptAddon.loadClasses(SkriptAddon.java:82)
+[21:09:05] [Server thread/WARN]: 	at SkJade.jar//com.ankoki.skjade.SkJade.loadElements(SkJade.java:145)
+[21:09:05] [Server thread/WARN]: 	at SkJade.jar//com.ankoki.skjade.SkJade.onEnable(SkJade.java:67)
+[21:09:05] [Server thread/WARN]: 	at org.bukkit.plugin.java.JavaPlugin.setEnabled(JavaPlugin.java:281)
+[21:09:05] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginInstanceManager.enablePlugin(PaperPluginInstanceManager.java:189)
+[21:09:05] [Server thread/WARN]: 	at io.papermc.paper.plugin.manager.PaperPluginManagerImpl.enablePlugin(PaperPluginManagerImpl.java:104)
+[21:09:05] [Server thread/WARN]: 	at org.bukkit.plugin.SimplePluginManager.enablePlugin(SimplePluginManager.java:507)
+[21:09:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R2.CraftServer.enablePlugin(CraftServer.java:644)
+[21:09:05] [Server thread/WARN]: 	at org.bukkit.craftbukkit.v1_20_R2.CraftServer.enablePlugins(CraftServer.java:555)
+[21:09:05] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadWorld0(MinecraftServer.java:627)
+[21:09:05] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:424)
+[21:09:05] [Server thread/WARN]: 	at net.minecraft.server.dedicated.DedicatedServer.e(DedicatedServer.java:308)
+[21:09:05] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.w(MinecraftServer.java:1086)
+[21:09:05] [Server thread/WARN]: 	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315)
+[21:09:05] [Server thread/WARN]: 	at java.base/java.lang.Thread.run(Thread.java:833)
+[21:09:05] [Server thread/ERROR]: [GuardianBeam] [GuardianBeam] Laser Beam reflection failed to initialize. The util is disabled. Please ensure your version (org.bukkit.craftbukkit.v1_20_R2) is supported.
+[21:09:05] [Server thread/INFO]: [SkJade] §fSk§aJade §f| §7SkJade v1.4.3 has been successfully enabled in 0.03 seconds (31ms)
+[21:09:05] [Server thread/INFO]: [skUtilities] Enabling skUtilities v0.9.2*
+[21:09:05] [Server thread/INFO]: [skUtilities] v0.9.2: loaded modules (Conversions, Files, Yaml, Urls, Utilities) in 27ms
+[21:09:05] [Server thread/INFO]: Running delayed init tasks
+[21:09:05] [Server thread/INFO]: [Skript] Loading variables...
+[21:09:05] [Server thread/INFO]: [Skript] Loaded 10018 variables in 0.2 seconds
+[21:09:05] [Server thread/INFO]: [Skript] Line 79: (bedwars/bed.sk)
+[21:09:05] [Server thread/INFO]:     Empty configuration section! You might want to indent one or more of the subsequent lines to make them belong to this section or remove the colon at the end of the line if you don't want this line to start a section.
+[21:09:05] [Server thread/INFO]:     Line: function equip_player(p: player):
+[21:09:05] [Server thread/INFO]:  
+[21:09:05] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[21:09:05] [Server thread/INFO]: [Skript] Loaded 5 scripts with a total of 18 structures in 0.25 seconds
+[21:09:05] [Server thread/INFO]: [Skript] Finished loading.
+[21:09:05] [Server thread/INFO]: Done (8.079s)! For help, type "help"
+[21:09:05] [Server thread/INFO]: Timings Reset
+[21:09:17] [User Authenticator #0/INFO]: UUID of player Xyandzaxis is 496e7295-e310-4bb0-a1e2-335675dbdd6c
+[21:09:17] [Server thread/INFO]: Xyandzaxis joined the game
+[21:09:17] [Server thread/INFO]: Xyandzaxis[/[0:0:0:0:0:0:0:1%0]:59244] logged in with entity id 482 at ([bedwars]-54.49579117037991, -19.0, 44.37615010386264)
+[21:09:27] [User Authenticator #0/INFO]: UUID of player ItsAlven is 0b2db947-3c18-4847-8a3f-18130c31f331
+[21:09:27] [Server thread/INFO]: ItsAlven joined the game
+[21:09:27] [Server thread/INFO]: ItsAlven[/217.215.73.171:58244] logged in with entity id 483 at ([bedwars]127.0905463098373, -19.0, -3.5028694717576534)
+[21:09:27] [User Authenticator #0/INFO]: UUID of player AverageLoaf is 101a1cf0-3513-4cc1-b2b3-37403c142a7c
+[21:09:27] [Server thread/INFO]: AverageLoaf joined the game
+[21:09:27] [Server thread/INFO]: AverageLoaf[/195.67.215.236:38359] logged in with entity id 484 at ([bedwars]-59.0, -19.0, -4.0)
+[21:09:34] [Server thread/INFO]: AverageLoaf issued server command: /begin
+[21:09:38] [Server thread/INFO]: AverageLoaf issued server command: /kill
+[21:09:38] [Server thread/INFO]: AverageLoaf was killed
+[21:09:38] [Server thread/INFO]: [AverageLoaf: Killed AverageLoaf]
+[21:09:47] [Server thread/INFO]: Blue bed has been destroyed!
+[21:09:47] [Server thread/INFO]: Showing new subtitle for AverageLoaf
+[21:09:47] [Server thread/INFO]: Showing new title for AverageLoaf
+[21:09:49] [Server thread/INFO]: AverageLoaf issued server command: /kill
+[21:09:49] [Server thread/INFO]: AverageLoaf was killed
+[21:09:49] [Server thread/INFO]: [AverageLoaf: Killed AverageLoaf]
+[21:09:59] [Server thread/INFO]: AverageLoaf issued server command: /gamemode survival
+[21:09:59] [Server thread/INFO]: [AverageLoaf: Set own game mode to Survival Mode]
+[21:10:10] [Server thread/INFO]: ItsAlven issued server command: /gamemode survival
+[21:10:10] [Server thread/INFO]: [ItsAlven: Set own game mode to Survival Mode]
+[21:10:12] [Server thread/INFO]: AverageLoaf lost connection: Disconnected
+[21:10:12] [Server thread/INFO]: AverageLoaf left the game
+[21:11:36] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload /bedwars/
+[21:12:00] [User Authenticator #1/INFO]: UUID of player AverageLoaf is 101a1cf0-3513-4cc1-b2b3-37403c142a7c
+[21:12:00] [Server thread/INFO]: AverageLoaf joined the game
+[21:12:00] [Server thread/INFO]: AverageLoaf[/195.67.215.236:40284] logged in with entity id 501 at ([bedwars]-47.38611607129363, -19.0, -3.125865499622765)
+[21:12:12] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:12:12] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:12:19] [Server thread/INFO]: ItsAlven fell out of the world
+[21:12:24] [Server thread/INFO]: ItsAlven fell from a high place
+[21:12:30] [Server thread/INFO]: ItsAlven fell from a high place
+[21:12:33] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:12:33] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:12:54] [Server thread/INFO]: AverageLoaf fell out of the world
+[21:12:55] [Server thread/INFO]: ItsAlven fell out of the world
+[21:12:57] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload /bedwars/
+[21:13:00] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:13:00] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:13:00] [Server thread/INFO]: ItsAlven fell from a high place
+[21:13:02] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:13:02] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:13:03] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:13:03] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:13:03] [Server thread/WARN]: ItsAlven moved too quickly! -0.8595561620029173,11.918577406440079,-0.6281781051950928
+[21:13:21] [Server thread/INFO]: ItsAlven didn't want to live in the same world as AverageLoaf
+[21:13:24] [Server thread/INFO]: AverageLoaf fell out of the world
+[21:13:25] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:25] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:25] [Server thread/WARN]: ItsAlven moved too quickly! 0.010757121314469487,23.4352391020162,-0.6265063427330979
+[21:13:25] [Server thread/WARN]: ItsAlven moved too quickly! 0.010757121314469487,23.4352391020162,-0.6265063427330979
+[21:13:26] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:26] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:26] [Server thread/WARN]: ItsAlven moved too quickly! 0.0026892803286173717,20.27909020143804,-2.907687671941744
+[21:13:28] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:28] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:28] [Server thread/INFO]: ItsAlven fell from a high place
+[21:13:30] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:13:30] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:13:31] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:13:31] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:13:40] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:40] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:40] [Server thread/WARN]: ItsAlven moved too quickly! -2.5749886533386217,35.05502055169595,-2.682818674699824
+[21:13:40] [Server thread/INFO]: ItsAlven was doomed to fall by AverageLoaf
+[21:13:42] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:42] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:42] [Server thread/WARN]: ItsAlven moved too quickly! -78.4305896843234,-127.48036095757155,-25.759307151373083
+[21:13:42] [Server thread/WARN]: ItsAlven moved too quickly! -78.4305896843234,-127.48036095757155,-25.759307151373083
+[21:13:43] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:43] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:43] [Server thread/WARN]: ItsAlven moved too quickly! 0.028893408633301476,-64.34739705411351,0.0
+[21:13:44] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:44] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:45] [Server thread/INFO]: AverageLoaf fell out of the world
+[21:13:46] [Server thread/INFO]: ItsAlven fell out of the world
+[21:13:48] [Server thread/INFO]: Xyandzaxis issued server command: /sk reload /bedwars/
+[21:13:49] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:13:49] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:13:49] [Server thread/WARN]: ItsAlven moved too quickly! -96.0,-61.0,-29.0
+[21:13:49] [Server thread/WARN]: ItsAlven moved too quickly! -96.0,-61.0,-29.0
+[21:13:49] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:49] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:52] [Server thread/INFO]: Xyandzaxis issued server command: /begin
+[21:13:59] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:13:59] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:13:59] [Server thread/WARN]: ItsAlven moved too quickly! 1.0149897087728093,59.36407671136256,3.46832724542464
+[21:13:59] [Server thread/INFO]: ItsAlven was doomed to fall by AverageLoaf
+[21:14:01] [Server thread/INFO]: Xyandzaxis issued server command: /team leave ItsAlven
+[21:14:01] [Server thread/INFO]: [Xyandzaxis: Removed ItsAlven from any team]
+[21:14:03] [Server thread/INFO]: ItsAlven issued server command: /tp ItsAlven AverageLoaf
+[21:14:03] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:14:03] [Server thread/WARN]: ItsAlven moved too quickly! -61.92283710668071,-27.012519654278186,-26.02854517687341
+[21:14:04] [Server thread/INFO]: ItsAlven fell from a high place
+[21:14:05] [Server thread/INFO]: AverageLoaf issued server command: /tp ItsAlven AverageLoaf
+[21:14:05] [Server thread/INFO]: [AverageLoaf: Teleported ItsAlven to AverageLoaf]
+[21:14:08] [Server thread/INFO]: Xyandzaxis issued server command: /team join Blue ItsAlven
+[21:14:08] [Server thread/INFO]: [Xyandzaxis: Added ItsAlven to team [Blue]]
+[21:14:14] [Server thread/INFO]: Xyandzaxis issued server command: /clear
+[21:14:14] [Server thread/INFO]: [Xyandzaxis: Removed 5 item(s) from player Xyandzaxis]
+[21:14:18] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
+[21:14:18] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
+[21:14:23] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
+[21:14:23] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
+[21:14:27] [Server thread/INFO]: Blue bed has been destroyed!
+[21:14:27] [Server thread/INFO]: Showing new subtitle for 2 players
+[21:14:27] [Server thread/INFO]: Showing new title for 2 players
+[21:14:33] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
+[21:14:33] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
+[21:14:35] [Server thread/INFO]: ItsAlven issued server command: /gamemode creative
+[21:14:35] [Server thread/INFO]: [ItsAlven: Set own game mode to Creative Mode]
+[21:14:36] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
+[21:14:36] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
+[21:15:34] [Server thread/WARN]: Skipping Entity with id 
+[21:15:39] [Server thread/WARN]: Skipping Entity with id 
+[21:15:50] [Server thread/INFO]: ItsAlven issued server command: /give ItsAlven minecraft:barrier¨
+[21:15:54] [Server thread/INFO]: ItsAlven issued server command: /give ItsAlven minecraft:barrier
+[21:15:54] [Server thread/INFO]: [ItsAlven: Gave 1 [Barrier] to ItsAlven]
+[21:16:00] [Server thread/INFO]: Xyandzaxis issued server command: /begin
+[21:16:00] [Server thread/WARN]: AverageLoaf moved too quickly! -0.4190627538674434,-1.125,-43.49285517314801
+[21:16:00] [Server thread/WARN]: ItsAlven moved too quickly! -1.9582856729659284,-0.375,-43.5897621940011
+[21:16:00] [Server thread/WARN]: Xyandzaxis moved too quickly! -3.7569460262619003,-2.1165013679281373,47.64873095059545
+[21:16:00] [Server thread/WARN]: AverageLoaf moved too quickly! -0.4190627538674434,-1.125,-43.49285517314801
+[21:16:00] [Server thread/WARN]: AverageLoaf moved too quickly! -0.4190627538674434,-1.125,-43.49285517314801
+[21:16:00] [Server thread/WARN]: AverageLoaf moved too quickly! -0.4190627538674434,-1.125,-43.49285517314801
+[21:16:00] [Server thread/WARN]: ItsAlven moved too quickly! -1.9582856729659284,-0.375,-43.5897621940011
+[21:16:00] [Server thread/WARN]: Xyandzaxis moved too quickly! -3.7569460262619003,-2.1165013679281373,47.64873095059545
+[21:16:02] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
+[21:16:02] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
+[21:16:03] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
+[21:16:03] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
+[21:16:07] [Server thread/INFO]: Blue bed has been destroyed!
+[21:16:07] [Server thread/INFO]: Showing new subtitle for 2 players
+[21:16:07] [Server thread/INFO]: Showing new title for 2 players
+[21:16:17] [Server thread/WARN]: Skipping Entity with id 
+[21:16:29] [Server thread/WARN]: Skipping Entity with id 
+[21:16:46] [Server thread/WARN]: Skipping Entity with id 
+[21:17:13] [Server thread/INFO]: Villager EntityVillager['Fisherman'/670, uuid='ef0a7b2e-3277-4087-aac4-53656ae737f7', l='ServerLevel[bedwars]', x=-65.39, y=-20.71, z=-11.63, cpos=[-5, -1], tl=312, v=true] died, message: 'Fisherman was slain by AverageLoaf'
+[21:17:29] [Server thread/INFO]: Xyandzaxis issued server command: //pos1
+[21:17:30] [Server thread/INFO]: AverageLoaf issued server command: //copy
+[21:17:38] [Server thread/INFO]: AverageLoaf issued server command: //paste
+[21:17:39] [Server thread/INFO]: Xyandzaxis issued server command: //pos2
+[21:17:46] [Server thread/INFO]: Xyandzaxis issued server command: //copy -e
+[21:17:48] [Server thread/INFO]: AverageLoaf issued server command: //copy inclurde
+[21:17:52] [Server thread/INFO]: AverageLoaf issued server command: //copy entity
+[21:18:01] [Server thread/INFO]: Xyandzaxis issued server command: //paste
+[21:18:22] [Server thread/INFO]: Xyandzaxis issued server command: //paste -e
+[21:18:43] [Server thread/INFO]: Villager EntityVillager['Fisherman'/754, uuid='c4d702ea-90d0-49df-82d8-fdb04e5e83d7', l='ServerLevel[bedwars]', x=-67.75, y=-188.97, z=-9.25, cpos=[-5, -1], tl=421, v=true] died, message: 'Fisherman didn't want to live in the same world as ItsAlven'
+[21:19:06] [Server thread/INFO]: Xyandzaxis issued server command: //help
+[21:19:11] [Server thread/INFO]: Xyandzaxis issued server command: //copy help
+[21:19:14] [Server thread/INFO]: Xyandzaxis issued server command: //help copy
+[21:19:45] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode spectator
+[21:19:45] [Server thread/INFO]: [Xyandzaxis: Set own game mode to Spectator Mode]
+[21:19:53] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode c
+[21:19:54] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode c
+[21:19:55] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode creative
+[21:19:55] [Server thread/INFO]: [Xyandzaxis: Set own game mode to Creative Mode]
+[21:20:27] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode spectator
+[21:20:27] [Server thread/INFO]: [Xyandzaxis: Set own game mode to Spectator Mode]
+[21:20:32] [Server thread/INFO]: Xyandzaxis issued server command: /gamemode creative
+[21:20:32] [Server thread/INFO]: [Xyandzaxis: Set own game mode to Creative Mode]
+[21:20:41] [Server thread/INFO]: AverageLoaf issued server command: /shopkeeper
+[21:20:55] [Server thread/INFO]: Xyandzaxis issued server command: /shopkeeper help
+[21:21:24] [Server thread/INFO]: Xyandzaxis issued server command: /shopkeeper snapshot create ITEM-SHOP item_shop
+[21:21:57] [Server thread/INFO]: Xyandzaxis issued server command: /kill @e[type=minecraft:villager,limit=1,sort=nearest]
+[21:21:57] [Server thread/INFO]: [Xyandzaxis: Killed ITEM SHOP]
+[21:22:31] [Server thread/INFO]: Xyandzaxis issued server command: /shopkeeper snapshot restore ITEM-SHOP item-shop
+[21:23:03] [Server thread/INFO]: Xyandzaxis issued server command: /shopkeeper snapshot restore ITEM-SHOP
+[21:25:20] [Server thread/INFO]: AverageLoaf issued server command: /kill @e[type=item]
+[21:25:20] [Server thread/INFO]: [AverageLoaf: Killed 26 entities]
+[21:25:23] [Server thread/INFO]: AverageLoaf issued server command: /kill @e[type=item]
+[21:25:23] [Server thread/INFO]: [AverageLoaf: Killed 3 entities]
+[21:25:24] [Server thread/INFO]: AverageLoaf issued server command: /kill @e[type=item]
+[21:25:26] [Server thread/INFO]: AverageLoaf issued server command: /kill @e[type=item]
+[21:25:26] [Server thread/INFO]: [AverageLoaf: Killed 3 entities]
+[21:25:28] [Server thread/INFO]: AverageLoaf issued server command: /kill @e[type=item]
+[21:25:38] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
+[21:25:38] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
+[21:25:40] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
+[21:25:40] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
+[21:25:52] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
+[21:25:52] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
+[21:25:57] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
+[21:25:57] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
+[21:25:57] [Server thread/INFO]: AverageLoaf issued server command: /gamemode spectator
+[21:25:57] [Server thread/INFO]: [AverageLoaf: Set own game mode to Spectator Mode]
+[21:26:04] [Server thread/INFO]: AverageLoaf issued server command: /kill @e[type=item]
+[21:26:04] [Server thread/INFO]: [AverageLoaf: Killed 12 entities]
+[21:26:06] [Server thread/INFO]: ItsAlven issued server command: /tp AverageLoaf
+[21:26:06] [Server thread/INFO]: [ItsAlven: Teleported ItsAlven to AverageLoaf]
+[21:26:06] [Server thread/WARN]: ItsAlven moved too quickly! 94.95502194004301,-1.9367239381658834,8.50231648878465
+[21:26:06] [Server thread/WARN]: ItsAlven moved too quickly! 94.95502194004301,-1.9367239381658834,8.50231648878465
+[21:26:06] [Server thread/WARN]: ItsAlven moved too quickly! 94.95502194004301,-1.9367239381658834,8.50231648878465
+[21:26:14] [Server thread/INFO]: AverageLoaf issued server command: /gamemode creative
+[21:26:14] [Server thread/INFO]: [AverageLoaf: Set own game mode to Creative Mode]
+[21:26:16] [Server thread/INFO]: AverageLoaf lost connection: Disconnected
+[21:26:16] [Server thread/INFO]: AverageLoaf left the game
+[21:26:30] [Server thread/INFO]: ItsAlven lost connection: Disconnected
+[21:26:30] [Server thread/INFO]: ItsAlven left the game
+[21:26:42] [Server thread/INFO]: Xyandzaxis lost connection: Disconnected
+[21:26:42] [Server thread/INFO]: Xyandzaxis left the game
+[21:26:44] [Server thread/INFO]: Stopping the server
+[21:26:44] [Server thread/INFO]: Stopping server
+[21:26:44] [Server thread/INFO]: [skUtilities] Disabling skUtilities v0.9.2
+[21:26:44] [Server thread/INFO]: [SkJade] Disabling SkJade v1.4.3
+[21:26:44] [Server thread/INFO]: [Shopkeepers] Disabling Shopkeepers v2.18.0
+[21:26:44] [Server thread/INFO]: [WorldEdit] Disabling WorldEdit v7.2.17+6544-56d0383
+[21:26:44] [Server thread/INFO]: Unregistering com.sk89q.worldedit.bukkit.BukkitServerInterface from WorldEdit
+[21:26:44] [Server thread/INFO]: [plugin] Disabling plugin v0.01
+[21:26:44] [Server thread/INFO]: [plugin] Disabling Bettercmd
+[21:26:44] [Server thread/INFO]: [Pesk] Disabling Pesk v1.6
+[21:26:44] [Server thread/INFO]: [SkQuery] Disabling SkQuery v4.1.10
+[21:26:44] [Server thread/INFO]: [Skript] Disabling Skript v2.7.2
+[21:26:44] [Server thread/INFO]: Saving players
+[21:26:44] [Server thread/INFO]: Saving worlds
+[21:26:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[bedwars]'/minecraft:overworld
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'bedwars'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'bedwars'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'bedwars'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Saved 263 block chunks, 264 entity chunks, 1 poi chunks in world 'bedwars' in 0.04s
+[21:26:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (bedwars): All chunks are saved
+[21:26:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[bedwars_nether]'/minecraft:the_nether
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'bedwars_nether'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'bedwars_nether'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'bedwars_nether'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 12 entity chunks, 0 poi chunks in world 'bedwars_nether' in 0.00s
+[21:26:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:26:44] [Server thread/INFO]: Saving chunks for level 'ServerLevel[bedwars_the_end]'/minecraft:the_end
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'bedwars_the_end'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'bedwars_the_end'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'bedwars_the_end'
+[21:26:44] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 57 entity chunks, 0 poi chunks in world 'bedwars_the_end' in 0.01s
+[21:26:44] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:26:44] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:26:44] [Server thread/INFO]: Flushing Chunk IO
+[21:26:44] [Server thread/INFO]: Closing Thread Pool
+[21:26:44] [Server thread/INFO]: Closing Server
