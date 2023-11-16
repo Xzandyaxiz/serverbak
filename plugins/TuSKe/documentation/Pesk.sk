@@ -1,0 +1,577 @@
+Events:
+	On Fluid Level Change:
+		ID: fluid_level_change
+		Patterns:
+			[on] [on] [block] fluid [level] chang(e|ing) [(of|for) %-itemtypes%] [with priority (lowest|low|normal|high|highest|monitor)]
+		Event values:
+			event-block
+			event-location
+			event-world
+		Cancellable: true
+	On Moisture Change:
+		ID: moisture_change
+		Patterns:
+			[on] [on] [block] moisture [level] chang(e|ing) [(of|for) %-itemtypes%] [with priority (lowest|low|normal|high|highest|monitor)]
+		Event values:
+			event-block
+			event-location
+			event-world
+		Cancellable: true
+Conditions:
+	CondHasStung:
+		ID: CondHasStung
+		Patterns:
+			%livingentities% (have|has) stung
+	CondInsideBorder:
+		ID: CondInsideBorder
+		Patterns:
+			%locations% (1¦is|2¦is(n't| not)) inside %worlds%['[s] [world[ ]]border]
+			%locations% (1¦is|2¦is(n't| not)) inside [[world[ ]]border of] %worlds%
+	CondIsAwake:
+		ID: CondIsAwake
+		Patterns:
+			%livingentities% (is|are) awake
+			%livingentities% (isn't|is not|aren't|are not) awake
+	CondIsBeehiveSedated:
+		ID: CondIsBeehiveSedated
+		Patterns:
+			%blocks% (is|are) sedated
+			%blocks% (isn't|is not|aren't|are not) sedated
+	CondIsConverting:
+		ID: CondIsConverting
+		Patterns:
+			%livingentities% (is|are) converting
+			%livingentities% (isn't|is not|aren't|are not) converting
+	CondIsCrouching:
+		ID: CondIsCrouching
+		Patterns:
+			%livingentities% (is|are) [fox] (crouching|sitting)
+			%livingentities% (isn't|is not|aren't|are not) [fox] (crouching|sitting)
+	CondIsDerp:
+		ID: CondIsDerp
+		Patterns:
+			%livingentities% (is|are) derp
+			%livingentities% (isn't|is not|aren't|are not) derp
+	CondIsForceLoaded:
+		ID: CondIsForceLoaded
+		Patterns:
+			%chunks% (is|are) force[ ]loaded
+			%chunks% (isn't|is not|aren't|are not) force[ ]loaded
+	CondIsPlayerCreated:
+		ID: CondIsPlayerCreated
+		Patterns:
+			%livingentities% (is|are) player[( |-)]creat(e|ed)
+			%livingentities% (isn't|is not|aren't|are not) player[( |-)]creat(e|ed)
+	CondIsPlayerSpawned:
+		ID: CondIsPlayerSpawned
+		Patterns:
+			%livingentities% (is|are) player[( |-)]spawn[ed]
+			%livingentities% (isn't|is not|aren't|are not) player[( |-)]spawn[ed]
+	CondIsPollinated:
+		ID: CondIsPollinated
+		Patterns:
+			%livingentities% (is|are) pollinated
+			%livingentities% (isn't|is not|aren't|are not) pollinated
+	CondIsShivering:
+		ID: CondIsShivering
+		Patterns:
+			%livingentities% (is|are) shivering
+			%livingentities% (isn't|is not|aren't|are not) shivering
+	CondIsSleeping:
+		ID: CondIsSleeping
+		Patterns:
+			%livingentities% (is|are) sleeping
+			%livingentities% (isn't|is not|aren't|are not) sleeping
+	CondTeamFriendlyFire:
+		ID: CondTeamFriendlyFire
+		Patterns:
+			%teams%'[s] [allow] friendly fire [state]
+			[allow] friendly fire [state] [of] %teams%
+	CondTeamFriendlyInvis:
+		ID: CondTeamFriendlyInvis
+		Patterns:
+			%teams%'[s] [can] [see] friendly invis[ibles] [state]
+			[can] [see] friendly invis[ibles] [state] [of] %teams%
+Effects:
+	EffAllow:
+		ID: EffAllow
+		Patterns:
+			allow [connect[ion]]
+	EffCloseLid:
+		ID: EffCloseLid
+		Patterns:
+			close [lid] [of] %blocks%
+	EffDisallow:
+		ID: EffDisallow
+		Patterns:
+			(disallow|deny) [connect[ion]] [with] message %string%
+	EffOpenLid:
+		ID: EffOpenLid
+		Patterns:
+			open [lid] [of] %blocks%
+	EffTeamAddEntity:
+		ID: EffTeamAddEntity
+		Patterns:
+			add %livingentities% to [the] team [named] %teams%
+	EffTeamCreate:
+		ID: EffTeamCreate
+		Patterns:
+			(create|make|register) [a] [new] team [named] %strings%
+	EffTeamDelete:
+		ID: EffTeamDelete
+		Patterns:
+			(delete|unregister) team %teams%
+	EffTeamRemoveEntity:
+		ID: EffTeamRemoveEntity
+		Patterns:
+			remove %livingentities% from [the] team [named] %teams%
+	EffVillagerSleep:
+		ID: EffVillagerSleep
+		Patterns:
+			(force|make) [villager] %livingentities% [to] sleep [at] %locations%
+Expressions:
+	ExprBanList:
+		ID: ExprBanList
+		Return type: Offline Player
+		Changers:
+			none
+		Patterns:
+			[the] ban[ ]list
+			[all] [the] banned players
+	ExprBatAwake:
+		ID: ExprBatAwake
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] awake of %livingentities%
+			%livingentities%'[s] awake
+	ExprBeaconEntitiesRange:
+		ID: ExprBeaconEntitiesRange
+		Return type: Living Entity
+		Changers:
+			add
+			remove
+			remove all
+		Patterns:
+			entit(ys|ies) in range of %blocks%
+			%blocks%'[s] entit(ys|ies) in range
+	ExprBeaconPrimaryEffect:
+		ID: ExprBeaconPrimaryEffect
+		Return type: Potion Effect Type
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] primary [potion] (e|a)ffect of %blocks%
+			%blocks%'[s] primary [potion] (e|a)ffect
+	ExprBeaconSecondaryEffect:
+		ID: ExprBeaconSecondaryEffect
+		Return type: Potion Effect Type
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] secondary [potion] (e|a)ffect of %blocks%
+			%blocks%'[s] secondary [potion] (e|a)ffect
+	ExprBeaconTier:
+		ID: ExprBeaconTier
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] tier of %blocks%
+			%blocks%'[s] tier
+	ExprBeeAnger:
+		ID: ExprBeeAnger
+		Return type: Number
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] anger of %livingentities%
+			%livingentities%'[s] anger
+	ExprBeeCannotEnterTicks:
+		ID: ExprBeeCannotEnterTicks
+		Return type: Number
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] cannot enter ticks of %livingentities%
+			%livingentities%'[s] cannot enter ticks
+	ExprBeeFlower:
+		ID: ExprBeeFlower
+		Return type: Location
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] flower [location] of %livingentities%
+			%livingentities%'[s] flower [location]
+	ExprBeeHive:
+		ID: ExprBeeHive
+		Return type: Location
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] hive [location] of %livingentities%
+			%livingentities%'[s] hive [location]
+	ExprBeePollen:
+		ID: ExprBeePollen
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] (nectar|pollen[ation]) [state] of %livingentities%
+			%livingentities%'[s] (nectar|pollen[ation]) [state]
+	ExprBeeStung:
+		ID: ExprBeeStung
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] stung [state] of %livingentities%
+			%livingentities%'[s] stung [state]
+	ExprBeehiveFlower:
+		ID: ExprBeehiveFlower
+		Return type: Location
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] flower [location] of %blocks%
+			%blocks%'[s] flower [location]
+	ExprBool:
+		ID: ExprBool
+		Return type: Boolean
+		Changers:
+			none
+		Patterns:
+			!%booleans%
+	ExprChunkEntities:
+		ID: ExprChunkEntities
+		Return type: Entity
+		Changers:
+			add
+			remove
+			remove all
+		Patterns:
+			entities (of|in) %chunks%
+			%chunks%'[s] entities
+	ExprChunkForceLoaded:
+		ID: ExprChunkForceLoaded
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] force[ ]loaded [state] of %chunks%
+			%chunks%'[s] force[ ]loaded [state]
+	ExprCollarWolf:
+		ID: ExprCollarWolf
+		Return type: Color
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] collar [color] of %livingentities%
+			%livingentities%'[s] collar [color]
+	ExprCommandBlockCommand:
+		ID: ExprCommandBlockCommand
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] command of %blocks%
+			%blocks%'[s] command
+	ExprCommandBlockName:
+		ID: ExprCommandBlockName
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] (executor|name) of %blocks%
+			%blocks%'[s] (executor|name)
+	ExprEndermanCarriedBlock:
+		ID: ExprEndermanCarriedBlock
+		Return type: material
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] carried[( |-)](block|material) of %livingentities%
+			%livingentities%'[s] carried[( |-)](block|material)
+	ExprFoxCrouch:
+		ID: ExprFoxCrouch
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] [fox] crouch[ing] [state] of %livingentities%
+			%livingentities%'[s] [fox] crouch[ing] [state]
+	ExprFoxSleep:
+		ID: ExprFoxSleep
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] sleep[ing] [state] of %livingentities%
+			%livingentities%'[s] sleep[ing] [state]
+	ExprIdleTimeout:
+		ID: ExprIdleTimeout
+		Return type: Number
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] idle time[ ]out
+	ExprPlayerCreated:
+		ID: ExprPlayerCreated
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] player[( |-)]creat(e|ed) [value] of %livingentities%
+			%livingentities%'[s] player[( |-)]creat(e|ed) [value]
+	ExprPlayerSpawned:
+		ID: ExprPlayerSpawned
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] player[( |-)]spawn[ed] [value] of %livingentities%
+			%livingentities%'[s] player[( |-)]spawn[ed] [value]
+	ExprPufferfishPuffState:
+		ID: ExprPufferfishPuffState
+		Return type: Number
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] puff[ ]state of %livingentities%
+			%livingentities%'[s] puff[ ]state
+	ExprRestockAmount:
+		ID: ExprRestockAmount
+		Return type: Number
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] restock[s] [amount] [today] of %livingentities%
+			%livingentities%'[s] restock[s] [amount] [today]
+	ExprServerName:
+		ID: ExprServerName
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] server [implementation] name
+	ExprShulkerBoxColor:
+		ID: ExprShulkerBoxColor
+		Return type: Color
+		Changers:
+			none
+		Patterns:
+			[the] box colo[u]r of %blocks%
+			%blocks%'[s] box colo[u]r
+	ExprShutdownMessage:
+		ID: ExprShutdownMessage
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [server] shut[ ]down message
+	ExprSnowmanDerp:
+		ID: ExprSnowmanDerp
+		Return type: Boolean
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] derp [state] of %livingentities%
+			%livingentities%'[s] derp [state]
+	ExprSpawnRadius:
+		ID: ExprSpawnRadius
+		Return type: Number
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] spawn[ ]radius
+	ExprTeam:
+		ID: ExprTeam
+		Return type: Team
+		Changers:
+			none
+		Patterns:
+			[the] [scoreboard] team of %livingentities%
+			%livingentities%'[s] [scoreboard] team
+	ExprTeamColor:
+		ID: ExprTeamColor
+		Return type: Object
+		Changers:
+			none
+		Patterns:
+			[the] team color of %teams%
+			%teams%'[s] team color
+	ExprTeamDisplayName:
+		ID: ExprTeamDisplayName
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] [team] display[(-| )]name of %teams%
+			%teams%'[s] [team] display[(-| )]name
+	ExprTeamEntries:
+		ID: ExprTeamEntries
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			entries of %teams%
+			%teams%'[s] entries
+	ExprTeamName:
+		ID: ExprTeamName
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [team] name of %teams%
+			%teams%'[s] [team] name
+	ExprTeamPrefix:
+		ID: ExprTeamPrefix
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] [team] prefix of %teams%
+			%teams%'[s] [team] prefix
+	ExprTeamSize:
+		ID: ExprTeamSize
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] [team] (size|entry (size|amount)|amount) of %teams%
+			%teams%'[s] [team] (size|entry (size|amount)|amount)
+	ExprTeamSuffix:
+		ID: ExprTeamSuffix
+		Return type: Text
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] [team] suffix of %teams%
+			%teams%'[s] [team] suffix
+	ExprTicksPerAmbientSpawns:
+		ID: ExprTicksPerAmbientSpawns
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] ambient spawn ticks
+	ExprTicksPerAnimalSpawns:
+		ID: ExprTicksPerAnimalSpawns
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] animal spawn ticks
+	ExprTicksPerMonsterSpawns:
+		ID: ExprTicksPerMonsterSpawns
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] monster spawn ticks
+	ExprTicksPerWaterAmbientSpawns:
+		ID: ExprTicksPerWaterAmbientSpawns
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] water ambient spawn ticks
+	ExprTicksPerWaterSpawns:
+		ID: ExprTicksPerWaterSpawns
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] water spawn ticks
+	ExprTropicalFishBodyColor:
+		ID: ExprTropicalFishBodyColor
+		Return type: Color
+		Changers:
+			none
+		Patterns:
+			[the] body colo[u]r of %livingentities%
+			%livingentities%'[s] body colo[u]r
+	ExprTropicalFishPatternColor:
+		ID: ExprTropicalFishPatternColor
+		Return type: Color
+		Changers:
+			none
+		Patterns:
+			[the] pattern colo[u]r of %livingentities%
+			%livingentities%'[s] pattern colo[u]r
+	ExprWaterAmbientSpawnLimit:
+		ID: ExprWaterAmbientSpawnLimit
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] water ambient spawn[ ]limit
+	ExprWaterAnimalSpawnLimit:
+		ID: ExprWaterAnimalSpawnLimit
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			[the] water animal spawn[ ]limit
+Types:
+	Team:
+		ID: Team
+		Description:
+			Represents a scoreboard team
+		Patterns:
+			team[s]

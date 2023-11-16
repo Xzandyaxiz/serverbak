@@ -1,0 +1,836 @@
+Events:
+	On Async PreLogin:
+		ID: async_prelogin
+		Patterns:
+			[on] [on] [async] [player] pre( |-)login [with priority (lowest|low|normal|high|highest|monitor)]
+		Event values:
+			event-string
+			event-object
+		Cancellable: false
+	On real time:
+		ID: real_time
+		Patterns:
+			[on] [on] (at|when it([']s| is)) %-times% (((in|of) [the] real world|irl)|GMT) [with priority (lowest|low|normal|high|highest|monitor)]
+		Event values:
+			none
+		Cancellable: false
+Conditions:
+	Boolean:
+		ID: CondBoolean
+		Description:
+			Shortens statements such as true = true to just true.
+		Examples:
+			if true:
+		Since:
+			1.0.0
+		Patterns:
+			%booleans%
+	Can Break Block:
+		ID: CondCanBreak
+		Description:
+			Checks if an item type can break a block.
+		Examples:
+			if player's tool can break player's target block:
+		Since:
+			1.0.0
+		Patterns:
+			%itemtype% can(1¦(not|[']t)|) break %block%
+	Can See:
+		ID: CondCanSee
+		Description:
+			Checks if a living entity can see another living entity.
+		Examples:
+			if player can see loop-player:
+		Since:
+			1.0.0
+		Patterns:
+			%entity% can see %entity%
+			%entity% can([']t|not) see %entity%
+	CondBlockConnected:
+		ID: CondBlockConnected
+		Description:
+			Makes player break a block.
+		Examples:
+			make player break event-block
+		Since:
+			1.4.0
+		Patterns:
+			%block% is (connected to|exposed to|touching) %itemtype%
+	Is Wet:
+		ID: CondIsWet
+		Description:
+			Checks if a player (1.1.0) or an entity (1.3.2) is in any type of liquid.
+		Examples:
+			if player is wet:
+		Since:
+			1.1.0
+		Patterns:
+			%player% is(1¦(n[']t| not)|) [standing] in water
+	Location is Within:
+		ID: CondLocIsWithin
+		Description:
+			Checks if a location is between two locations
+		Examples:
+			if player's location is within arg-1's location and arg-2's location:
+		Since:
+			1.0.0
+		Patterns:
+			%locations% (is|are) within [[the] location] %location% and [[the] location] %location%
+			%locations% (isn't|is not|aren't|are not) within [[the] location] %location% and [[the] location] %location%
+	Multiple Conditions:
+		ID: CondMultiple
+		Description:
+			Allows you to use multiple conditions.
+		Examples:
+			if attacker is online && victim is online:
+		Since:
+			1.0.0
+		Patterns:
+			<.+> && <.+>
+			<.+> \|\| <.+>
+	Slime Chunk:
+		ID: CondIsSlimeChunk
+		Description:
+			Checks if a chunk is a slime chunk.
+		Examples:
+			if {_chunk} is a slime chunk:
+		Since:
+			1.0.0
+		Patterns:
+			%chunks% (is|are) slime(y|chunk)
+			%chunks% (isn't|is not|aren't|are not) slime(y|chunk)
+	Within World Border:
+		ID: CondIsInWorldBorder
+		Description:
+			Checks if the given location is within the world border.
+		Examples:
+			if {_futureLocation} is not inside the world border:
+				cancel event
+				send "You cannot teleport outside the world border!"
+		Since:
+			1.0.0
+		Patterns:
+			%locations% (is|are) (within|inside) [the] world[(-| )]border
+			%locations% (isn't|is not|aren't|are not) (within|inside) [the] world[(-| )]border
+Effects:
+	Build Paste:
+		ID: EffBuildPaste
+		Description:
+			Create's a pastebin paste. You should only call this once per paste. The developer key is linked to your pastebin account and found at this website: https://pastebin.com/doc_api#1
+		Examples:
+			build the paste with the id "myPaste" with the developer key "{@developerKey}"
+			send the link of last built pastebin
+		Since:
+			1.0.0
+		Patterns:
+			build [the] [paste] %paste% with the dev[eloper] key %string%
+	Create Paste:
+		ID: EffCreatePaste
+		Description:
+			Creates a new pastebin paste. The ID must be unique.
+		Examples:
+			create a new paste with the id "myPaste"
+		Since:
+			1.0.0
+		Patterns:
+			create [a] [new] paste[bin[ paste]] with [the] id %string%
+	Drop Item:
+		ID: EffDropTool
+		Description:
+			Makes the player drop one of their current item, or their inventory.
+		Examples:
+			make event-player drop their current item
+		Since:
+			1.0.0
+		Patterns:
+			make %players% drop (1¦[their] [current] item|2¦all [the] items in [their] hand|their [(whole|entire)] inv[entory])
+	EffBreakBlock:
+		ID: EffBreakBlock
+		Description:
+			Makes player break a block.
+		Examples:
+			make player break event-block
+		Since:
+			1.4.0
+		Patterns:
+			make %player% (mine|break) [the] [block [at]] %block/location%
+	EffSetLoginResult:
+		ID: EffSetLoginResult
+		Patterns:
+			set [event( |-)]login[( |-)]result to %string% with message %string%
+	Evaluate Effect:
+		ID: EffEvaluate
+		Description:
+			Execute a Skript effect from a string.
+		Examples:
+			evaluate "set player's flight mode to true"
+		Since:
+			1.0.0
+		Patterns:
+			(eval[uate]|execute) %strings%
+	Force Sleep:
+		ID: EffForceSleep
+		Description:
+			Forces a player to sleep at a location as long as there is a bed at that location.
+		Examples:
+			force event-player to sleep at {%player's uuid%::permabed}
+		Since:
+			1.0.0
+		Patterns:
+			(force|make) %players% [to] sleep at %location%
+	Force Wake:
+		ID: EffForceWake
+		Description:
+			Forces a player to wake up if they are sleeping.
+		Examples:
+			force {_p} to wake up and set spawn point
+		Since:
+			1.0.0
+		Patterns:
+			(force|make) %players% [to] wake[ ]up [(1¦and set spawn[[ ]point])]
+	Lasagna:
+		ID: EffLasagna
+		Description:
+			Lasagna.
+		Examples:
+			lasagna
+		Since:
+			1.1.0
+		Patterns:
+			(lasagna|an Italian dish made of stacked layers of thin flat pasta alternating with fillings and other vegetables, cheese and seasonings and spices)
+	Refresh Chunks:
+		ID: EffRefreshChunks
+		Description:
+			Refeshes the chunks given asynchronously.
+		Examples:
+			refresh the chunk at arg-1
+		Since:
+			1.0.0
+		Patterns:
+			(reload|refresh) [the] [chunk[s]] %chunks%
+	Reset World Border:
+		ID: EffWorldBorderReset
+		Description:
+			Resets the world border of a world.
+		Examples:
+			Reset the world border of player's world
+		Since:
+			1.3.0
+		Patterns:
+			[skjade] reset ([the] [world[ ]]border [of] %worlds%|%worlds%'s world border)
+	Set Paste Format:
+		ID: EffSetPasteFormat
+		Description:
+			Sets the formattinng of a paste. You can find more about the formatting options here: https://pastebin.com/doc_api#5
+		Examples:
+			set the format of the paste with the id "myPaste" to "java"
+		Since:
+			1.0.0
+		Patterns:
+			set [the] [text] format[ting] of %pastes% to %string%
+	Set Paste Text:
+		ID: EffSetPasteText
+		Description:
+			Sets the text of a paste.
+		Examples:
+			set the raw text of the paste with id "myPaste" to "Hi! This is my paste!"
+		Since:
+			1.0.0
+		Patterns:
+			set [the] [raw] text of %pastes% to %strings%
+	Set Paste Title:
+		ID: EffSetPasteTitle
+		Description:
+			Sets the title of a paste.
+		Examples:
+			set the title of the paste with id "myPaste" to "Hi! This is my paste!"
+		Since:
+			1.0.0
+		Patterns:
+			set [the] title of %pastes% to %string%
+	Set Paste Visibility:
+		ID: EffSetPasteVisibility
+		Description:
+			Sets the visibility of a paste.
+		Examples:
+			make the paste with the id "myPaste" be public
+		Since:
+			1.0.0
+		Patterns:
+			make %pastes% be (public|1¦private|2¦unlisted)
+	Set Paste to Expire:
+		ID: EffSetPasteExpire
+		Description:
+			Set when a paste will expire.
+		Examples:
+			set the paste with the id "myPaste" to never expire
+		Since:
+			1.0.0
+		Patterns:
+			set %pastes% to never expire
+			set %pastes% to expire in (a|1|one) year
+			set %pastes% to expire in (6|six) months
+			set %pastes% to expire in (a|1|one) month
+			set %pastes% to expire in (2|two) weeks
+			set %pastes% to expire in (a|1|one) week
+			set %pastes% to expire in (a|1|one) day
+			set %pastes% to expire in (an|1|one) hour
+			set %pastes% to expire in (ten|10) min[ute]s
+	World Border Size Over Time:
+		ID: EffWorldBorderSizeOverTime
+		Description:
+			Sets the worldborder of a world over time.
+		Examples:
+			set player's world's world border to 10 over 10 seconds
+		Since:
+			1.3.0
+		Patterns:
+			set [skjade] [world[ ]]border size of %world% to %number% over %timespan%
+			set [skjade] %world%'s [world[ ]]border size to %number% over %timespan%
+Expressions:
+	Border Slots:
+		ID: ExprBorderSlots
+		Description:
+			Returns the border slots of an inventory.
+		Examples:
+			set border slots of the event-inventory to glowing diamond
+		Since:
+			1.0.0
+		Return type: integer
+		Changers:
+			set
+		Patterns:
+			border slots of [the] [inventory] %inventory%
+	Character:
+		ID: ExprCharacter
+		Description:
+			A single character.
+		Examples:
+			broadcast 'h'
+		Since:
+			1.1.0
+		Return type: Character
+		Changers:
+			none
+		Patterns:
+			'<(.)>'
+	Chunk at Location:
+		ID: ExprChunkAt
+		Description:
+			Returns the chunk in a world from the x and y coordinates.
+		Examples:
+			set {_ch} to chunk 1, 3 of player's world
+		Since:
+			1.0.0
+		Return type: Chunk
+		Changers:
+			none
+		Patterns:
+			chunk %number%(, | and) %number% of %world%
+	Circle:
+		ID: ExprCircle
+		Description:
+			Returns the points of the outline of a circle which 
+		Examples:
+			set all blocks at (circle at player's location with a radius of 5) to red wool
+		Since:
+			1.0.0
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			[a[n]] (1¦upright|) circle (at|from) %location% with [a] radius [of] %number% [and %-number% total (points|blocks|locations)]
+	Cone:
+		ID: ExprCone
+		Description:
+			Returns a list of locations to make up a cone.
+		Examples:
+			show blue dust at cone around player, radius 5, height 8 and density 10
+		Since:
+			1.2.0
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			[a] cone (with [a] cent(re|er) [of]|around) %location%(,| and) [a] radius [of] %number%[(,| and)] [a] height [of] %number%[(,| and)] [a] density [of] %number%
+	Core/Primary World:
+		ID: ExprCoreWorld
+		Description:
+			Returns the main world, aka the fallback world.
+		Examples:
+			set {_world} to the main world
+		Since:
+			1.3.0
+		Return type: World
+		Changers:
+			none
+		Patterns:
+			[the] (core|main|original|primary) world [of [the] server]
+	English Plural:
+		ID: ExprEnglishPlural
+		Description:
+			Returns the english plural of a word. This may be inaccurate.
+		Examples:
+			set {_plural} to english plural of "helicopter"
+		Since:
+			1.0.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [english] plural of %string%
+	Exact Target Block:
+		ID: ExprExactTargetBlock
+		Description:
+			Gets the exact target block of an entity.
+		Examples:
+			set {-target::%player's uuid%} to player's exact target block
+		Since:
+			1.1.0
+		Return type: Block
+		Changers:
+			set
+		Patterns:
+			%entity%'s exact target[ed] block
+			%entity%'s exact target[ed] block including (1¦[only ]source|[any] [type of]) fluid[s]
+	Flipped Boolean:
+		ID: ExprFlippedBool
+		Description:
+			Returns the flipped value of a boolean
+		Examples:
+			broadcast "%flipped {bed::%player's uuid%}%"
+			set player's flight mode to !(player's flight mode)
+		Since:
+			1.0.0
+		Return type: Boolean
+		Changers:
+			none
+		Patterns:
+			(flipped |toggled |inverted |!)%boolean%
+	Formatted Number:
+		ID: ExprFormatNumber
+		Description:
+			Formats a number over 999 to be in readable form, such as 2000 -> 2,000.
+		Examples:
+			broadcast "%player%'s Balance: $%formatted number {eco::%%player's uuid%%}%
+		Since:
+			1.2.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] formatted number %number%
+	Glowing ItemStack:
+		ID: ExprGlowing
+		Description:
+			Makes a glowing(enchanted with no enchant flag) item.
+		Examples:
+			give player glowing diamond
+		Since:
+			1.0.0
+		Return type: Item
+		Changers:
+			none
+		Patterns:
+			glowing %itemstack%
+	Hardcore World:
+		ID: ExprWorldHardcore
+		Description:
+			Gets and sets wether or not a world is hardcore.
+		Examples:
+			set the hardcore value of world "world" to true
+		Since:
+			1.3.0
+		Return type: Boolean
+		Changers:
+			set
+		Patterns:
+			[the] hardcore (value|mode|state) of %world%
+			[the] %world%'s hardcore (value|mode|state)
+	ID of Entity:
+		ID: ExprEntityId
+		Description:
+			Returns the id of an entity.
+		Examples:
+			broadcast "%event-entity's id%"
+		Since:
+			1.2.0
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			%entity%'s id
+			the id of %entity%
+	Inet Address:
+		ID: ExprInetAddress
+		Description:
+			Used for event-address in the AsyncPlayerPreLoginEvent
+		Examples:
+			send "event-address"
+		Since:
+			1.1.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			event(-| )[inet]address
+	Item Cooldown:
+		ID: ExprItemCooldown
+		Description:
+			Gets and sets the cooldown for a material for a player.
+		Examples:
+			set the cooldown of wool for player to 10 seconds
+		Since:
+			1.3.0
+		Return type: Timespan
+		Changers:
+			set
+			delete
+			reset
+		Patterns:
+			[the] cooldown of %itemtypes% for %player%
+	Kick Message:
+		ID: ExprKickMsg
+		Description:
+			Gets/sets the kick message in an AsyncPlayerPreLoginEvent
+		Examples:
+			set kick-message to "lol u got kicked"
+		Since:
+			1.1.0
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[event(-| )]kick[( |-)]message
+	Last Built Paste:
+		ID: ExprLastBuiltPaste
+		Description:
+			Returns the link of the last built pastebin. If you build a new paste, this will be overridden.
+		Examples:
+			send the url of the last built paste
+		Since:
+			1.0.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [(link|url) of] [the] last built paste[bin [paste]]
+	Login Result:
+		ID: ExprLoginResult
+		Description:
+			Gets/sets the login result for an async prelogin event. Please note this can only be set to "kick other", "allowed", "kick banned", "kick full", or "kick whitelist"
+		Examples:
+			broadcast event-login-result
+		Since:
+			1.1.0
+		Return type: Text
+		Changers:
+			set
+		Patterns:
+			[event( |-)]login[( |-)]result
+	Midnight:
+		ID: ExprMidnight
+		Description:
+			Returns the date of midnight.
+		Examples:
+			set {_midnight} to midnight
+		Since:
+			1.0.0
+		Return type: Date
+		Changers:
+			none
+		Patterns:
+			midnight
+	Nearest Entity:
+		ID: ExprNearestEntity
+		Description:
+			Returns the nearest entity to a location.
+		Examples:
+			kill the closest entity to player
+		Since:
+			1.0.0
+		Return type: Entity
+		Changers:
+			add
+			remove
+			remove all
+		Patterns:
+			[the] (nearest|closest) (1¦[entity of type] %-entitytype%|entity) to %entity%
+			[the] (nearest|closest) entity (1¦[entity of type] %-entitytype%|entity) to %location%
+	Nearest Structure:
+		ID: ExprNearestStructure
+		Description:
+			Find the closest nearby structure of a given structure type. Will not be set if not found. Finding unexplored structures can, and will, block if the world is looking in chunks that gave not generated yet. This can lead to the world temporarily freezing while locating an unexplored structure.
+			The radius is not a rigid square radius. Each structure may alter how many chunks to check for each iteration. Do not assume that only a radius x radius chunk area will be checked. For example, a woodland mansion can potentially check up to 20,000 blocks away (or more) regardless of the radius used.
+			This will not load or generate chunks. This can also lead to instances where the server can hang if you are only looking for unexplored structures. This is because it will keep looking further and further out in order to find the structure.
+		Examples:
+			teleport player to the closest village within radius 10 around player
+		Since:
+			1.3.0
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			[the] (nearest|closest) (1¦(not |un)(explored|discovered)|) [structure [of]] %skjstructuretype% (in|within) [a] radius [of] %number% (around|at|from|of) %location%
+	Paste:
+		ID: ExprPaste
+		Description:
+			Returns the pastebin paste with that id if it exists, else, it will be null.
+		Examples:
+			set {logs::%player's uuid%} to the pastebuilder with the id "%player%Paste"
+		Since:
+			1.0.0
+		Return type: Paste
+		Changers:
+			none
+		Patterns:
+			[the] paste[builder] with [the] id %string%
+	Paste Response:
+		ID: ExprPasteResponse
+		Description:
+			Returns the raw text from a pastebin. The developer key is linked to your pastebin account and found at this website: https://pastebin.com/doc_api#1
+		Examples:
+			set {_pastebin} to the paste repsone from "bpgexBcS" with the developer key {@apiKey}
+		Since:
+			1.0.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] [raw] [paste] (response|text) from [[the] paste] %string% with the dev[eloper] key %string%
+	Player's Spawn Point:
+		ID: ExprPlayerSpawn
+		Description:
+			Gets and sets the spawn point of a player.
+		Examples:
+			set player's spawn point to event-location
+		Since:
+			1.3.1
+		Return type: Location
+		Changers:
+			set
+			reset
+		Patterns:
+			[the] %player%[']s spawn[ point]
+			[the] spawn [point] of %player%
+	Roman Numerals:
+		ID: ExprRomanNumerals
+		Description:
+			Returns the given number in roman numerals.
+		Examples:
+			send "Sharpness level: %roman numeral of (level of sharpness of player's tool)%"
+		Since:
+			1.0.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[[the] value of] %number% in roman numeral[s]
+			[the] roman numeral[s] [value] of %number%
+	Star:
+		ID: ExprStar
+		Description:
+			Returns the points of the outline of a star from the center, radius, and density
+		Examples:
+			set blocks at (star at player's location with 5 points, with radius 10 and density 5) to red wool
+		Since:
+			1.0.0
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			[(all [[of] the]|the)] [(loc[ation]s|points) of] [a] star (at|from) %location% with %number% points(,| and) [with] [a] radius [of] %number%(,| and) [a] density [of] %number%
+	Text Between:
+		ID: ExprTextBetween
+		Description:
+			Gets the text between two characters.
+		Examples:
+			set {_money} to the text between '[' and ']' from line 1 of event-item's lore
+		Since:
+			1.1.0
+		Return type: Text
+		Changers:
+			none
+		Patterns:
+			[the] text between %character% and %character% (from|in) %string%
+	Time at Player:
+		ID: ExprTimeAtPlayer
+		Description:
+			Returns the player's time.
+		Examples:
+			broadcast "%the time at player%"
+		Since:
+			1.0.0
+		Return type: Time
+		Changers:
+			set
+		Patterns:
+			[the] time at [(player|the player)] %player%
+	Timespan in Ticks:
+		ID: ExprTimespanTicks
+		Description:
+			Converts a timespan into ticks.
+		Examples:
+			broadcast "%20 seconds in ticks%"
+		Since:
+			1.3.0
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			%timespan% in ticks
+			ticks of %timespan%
+			[the] amount of ticks in %timespan%
+	Torus/Giant Donut:
+		ID: ExprTorus
+		Description:
+			Returns the locations to make up a giant donut/torus.
+		Examples:
+			play green spark at a giant donut around player's location with major radius 5 and minor radius 2
+		Since:
+			1.2.0
+		Return type: Location
+		Changers:
+			none
+		Patterns:
+			[a] (torus|[giant ]donut) (at|around) %location% with [a] major radius [of] %number% and [a] minor radius [of] %number% [with [a] density [of] %-number%]
+	Unary Value:
+		ID: ExprUnary
+		Description:
+			Returns the unary value of a number.
+		Examples:
+			broadcast "%-{hello::%player's uuid%}"
+		Since:
+			1.3.0
+		Return type: Number
+		Changers:
+			none
+		Patterns:
+			(-|unary [value of ])%~number%
+	World Border Center:
+		ID: ExprWorldBorderCenter
+		Description:
+			Allows you to get and set the center of a world border.
+		Examples:
+			set the centre of player's world's world border to player's location
+		Since:
+			1.3.0
+		Return type: Location
+		Changers:
+			set
+		Patterns:
+			[skjade] [world[ ]]border cent(re|er) of %world%
+			[skjade] [the] %world%'s [world[ ]]border cent(re|er)
+			[skjade] [the] cent(re|er) of %world%'s [world[ ]]border
+	World Border Damage Amount:
+		ID: ExprWorldBorderDamageAmount
+		Description:
+			Allows you to get and set the damage amount of a world border.
+		Examples:
+			set the damage amount of player's world's world border to 3
+		Since:
+			1.3.0
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[skjade] [world[ ]]border damage amount of %world%
+			[skjade] %world%'s [world[ ]]border damage amount
+			[skjade] [the] damage amount of %world%'s [world[ ]]border
+	World Border Damage Buffer:
+		ID: ExprWorldBorderDamageBuffer
+		Description:
+			Allows you to get and set the damage buffer of a world border.
+		Examples:
+			set the damage buffer of player's world's world border to 3
+		Since:
+			1.3.0
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[skjade] [world[ ]]border damage buffer of %world%
+			[skjade] %world%'s [world[ ]]border damage buffer
+			[skjade] [the] damage buffer of %world%'s [world[ ]]border
+	World Border Size:
+		ID: ExprWorldBorderSize
+		Description:
+			Allows you to get and set the size of a world border.
+		Examples:
+			set the size of player's world's world border to 500
+		Since:
+			1.3.0
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[skjade] [world[ ]]border size of %world%
+			[skjade] %world%'s [world[ ]]border size
+			[skjade] [the] size of %world%'s [world[ ]]border
+	World Border Warning Distance:
+		ID: ExprWorldBorderWarningDistance
+		Description:
+			Allows you to get and set the warning distance of a world border.
+		Examples:
+			set the warning distance of player's world's world border to 10
+		Since:
+			1.3.0
+		Return type: Number
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[skjade] [world[ ]]border warning distance of %world%
+			[skjade] %world%'s [world[ ]]border warning distance
+			[skjade] [the] warning distance of %world%'s [world[ ]]border
+	World Border Warning Time:
+		ID: ExprWorldBorderWarningTime
+		Description:
+			Allows you to get and set the warning time of a world border.
+		Examples:
+			set the warning time of player's world's world border to 20 seconds
+		Since:
+			1.3.0
+		Return type: Timespan
+		Changers:
+			add
+			set
+			remove
+			delete
+			reset
+		Patterns:
+			[skjade] [world[ ]]border warning time of %world%
+			[skjade] %world%'s [world[ ]]border warning time
+			[skjade] [the] warning time of %world%'s [world[ ]]border
+Types:
+	Paste:
+		ID: PasteBuilder
+		Description:
+			A PasteBuilder created with SkJade.
+		Since:
+			1.0.0
+		Patterns:
+			past[e][s]
+	Structure Type:
+		ID: StructureType
+		Description:
+			A specified structure type.
+		Since:
+			1.3.0
+		Patterns:
+			skjstructuretyp[e][s]

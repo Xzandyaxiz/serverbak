@@ -1,0 +1,47 @@
+command /lock <string>:
+  trigger:
+    player's targeted block is a chest or barrel
+    
+    set {_i} to 0
+    loop {chest_loc::*}:
+      add 1 to {_i}
+
+    set {chest_loc::%{_i}%} to player's targeted block
+
+    set {chest_pass::%{_i}%} to arg-1
+
+    send "Locked chest!" to player
+
+command /clearlocks:
+  permission: server.admin
+  trigger:
+    clear {chest_loc::*}
+    clear {chest_pass::*}
+    broadcast "Removed locks from all containers."
+
+on right click:
+  player's targeted block is a chest or barrel
+  {chest_loc::*} contains player's targeted block
+  cancel the event
+  send "Container is locked!" to player
+
+command /unlock <string> [<string>]:
+  trigger:
+    player's targeted block is a chest or barrel
+
+    {chest_loc::*} contains player's targeted block
+
+    set {_i} to 0
+    loop {chest_pass::*}:
+      if arg-1 is loop-value:
+        if arg-2 is "clear":
+          delete {chest_pass::%{_i}%}
+          delete {chest_loc::%{_i}%}
+
+        set {_opened} to true
+        open player's targeted block to player
+
+      add 1 to {_i}
+
+    if {_opened} is not true:
+      send "Wrong password!" to player

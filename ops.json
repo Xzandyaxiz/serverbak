@@ -16,17 +16,5 @@
     "name": "ItsAlven",
     "level": 4,
     "bypassesPlayerLimit": false
-  },
-  {
-    "uuid": "f3ba459c-2e4a-453d-9484-eb28c8dff14c",
-    "name": "graydoorhandle",
-    "level": 4,
-    "bypassesPlayerLimit": false
-  },
-  {
-    "uuid": "a430d50a-7324-4a38-ad80-a6428b75de6e",
-    "name": "LundqvistAxel",
-    "level": 4,
-    "bypassesPlayerLimit": false
   }
 ]

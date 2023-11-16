@@ -1,0 +1,117 @@
+on join:
+  clear {bed_dead::*}
+  clear {player_dead::*}
+  clear {team_dead::*}
+
+on death:
+  wait 1 tick
+
+  set victim's gamemode to spectator
+
+  teleport victim to location 37, 42, 25 in world "bedwars"
+  {team_dead::*} does not contain display name of victim's team 
+  
+  send subtitle "" to victim
+
+  send title "3" to victim
+  wait 1 second
+
+  send title "2" to victim
+  wait 1 second
+
+  send title "1" to victim
+  wait 1 second
+
+  teleport_player(victim)
+
+  set victim's gamemode to survival
+  
+  equip_player(victim)
+  give victim wooden sword of sharpness 1
+
+  send title "Go!" to victim
+  play sound "block.note_block.bell" to victim
+  wait 0.5 seconds
+
+  send title "" to victim
+
+on gamemode change to survival:
+  clear inventory of player
+
+function teleport_player(p: player):
+  if display name of {_p}'s team is "Blue":
+    set {_loc} to location -59, -19, -4 in world "bedwars"
+    set {_p}'s spawn point to {_loc}
+    teleport {_p} to {_loc}
+
+  if display name of {_p}'s team is "Red":
+    set {_loc} to location -56, -19, 44 in world "bedwars"
+    set {_p}'s spawn point to {_loc}
+    teleport {_p} to {_loc}
+
+command /clearbeds:
+  trigger:
+    clear {bed::*}
+
+command /setbed <number> <number> <number>:
+  trigger:
+    set {_loc} to location arg-1, arg-2, arg-3 in world "bedwars"
+    
+    add {_loc} to {bed::*}
+
+on break:
+  wait 1 tick
+  set {_i} to 0
+
+  loop {bed::*}:
+    if block at loop-value is not a red bed:
+      {bed_dead::*} does not contain loop-value
+      
+      if {_i} is 0:
+        set {_team} to "Blue"
+        broadcast "§9%{_team}%§f bed has been destroyed!"
+     
+      else if {_i} is 1:
+        set {_team} to "Red"
+        broadcast "§c%{_team}%§f bed has been destroyed!"
+       
+      add {_team} to {team_dead::*}
+        
+      execute console command "/title @a[team=%{_team}%] subtitle ""You will no longer respawn"" "
+      execute console command "/title @a[team=%{_team}%] title ""§cBED DESTROYED"" "
+
+      summon lightning bolt at location of loop-value-1
+      add loop-value to {bed_dead::*}
+
+      play sound "entity.lightning_bolt.thunder" to all players
+
+    add 1 to {_i}
+
+function equip_player(p: player):
+  if display name of {_p}'s team is "Blue": 
+    equip {_p} with leather helmet of protection 1
+    equip {_p} with leather chestplate of protection 1
+    equip {_p} with leather leggings of protection 1
+    equip {_p} with leather boots of protection 1
+
+  if display name of {_p}'s team is "Red":
+    equip {_p} with leather helmet of protection 1
+    equip {_p} with leather chestplate of protection 1
+    equip {_p} with leather leggings of protection 1
+    equip {_p} with leather boots of protection 1
+
+command /begin:
+  trigger:
+    clear {bed_dead::*}
+    clear {player_dead::*}
+    clear {team_dead::*}
+
+    loop all players:
+      teleport_player(loop-player)
+      
+      clear loop-player's inventory
+      set loop-player's gamemode to survival
+      
+      give loop-player a wooden sword of sharpness 1
+    
+      equip_player(loop-player)

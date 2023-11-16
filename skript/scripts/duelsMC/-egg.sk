@@ -1,0 +1,14 @@
+command /eggspawn:
+  trigger:
+    set {_y} to player's y location
+    loop 100 times:
+      spawn an egg at location player's x location, {_y}, player's z location in world "testmap_nether"
+      
+      set gravity of last spawned egg to off
+      add 0.001 to {_y}
+
+command /triggeregg:
+  trigger:
+    loop entities in radius 5 around location of player:
+      if loop-entity is an egg:
+        set gravity of loop-entity to on

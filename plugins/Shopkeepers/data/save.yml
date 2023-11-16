@@ -7,7 +7,7 @@ data-version: 3|2|3578
   x: -60
   y: -19
   z: 41
-  yaw: 242.05191
+  yaw: 359.61032
   type: admin
   name: ITEM SHOP
   object:
@@ -211,210 +211,268 @@ data-version: 3|2|3578
         v: 3578
         type: GOLD_INGOT
         amount: 6
-  snapshots:
-  - name: item_shop
-    timestamp: '2023-11-06T20:21:24.273180431Z'
-    data:
-      type: admin
-      name: ITEM SHOP
-      object:
-        type: villager
-        baby: false
-        profession: CLERIC
-        villagerType: SNOW
-        villagerLevel: 5
-      recipes:
-        '1':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: RED_WOOL
-            amount: 16
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_INGOT
-            amount: 4
-        '2':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: END_STONE
-            amount: 12
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_INGOT
-            amount: 24
-        '3':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: SPRUCE_PLANKS
-            amount: 16
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 4
-        '4':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: STONE_SWORD
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_INGOT
-            amount: 10
-        '5':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_SWORD
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 7
-        '6':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: FIRE_CHARGE
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_INGOT
-            amount: 40
-        '7':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: POTION
-            meta:
-              ==: ItemMeta
-              meta-type: POTION
-              potion-type: minecraft:strong_leaping
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: EMERALD
-        '8':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: POTION
-            meta:
-              ==: ItemMeta
-              meta-type: POTION
-              potion-type: minecraft:strong_swiftness
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: EMERALD
-        '9':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: POTION
-            meta:
-              ==: ItemMeta
-              meta-type: POTION
-              potion-type: minecraft:invisibility
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: EMERALD
-            amount: 2
-        '10':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: DIAMOND_SWORD
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: EMERALD
-            amount: 4
-        '11':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLDEN_APPLE
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 3
-        '12':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: WATER_BUCKET
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 4
-        '13':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: BOW
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 16
-        '14':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: ARROW
-            amount: 16
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 2
-        '15':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: STONE_PICKAXE
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_INGOT
-            amount: 10
-        '16':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_PICKAXE
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: IRON_INGOT
-            amount: 20
-        '17':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLDEN_PICKAXE
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 3
-        '18':
-          resultItem:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: DIAMOND_PICKAXE
-          item1:
-            ==: org.bukkit.inventory.ItemStack
-            v: 3578
-            type: GOLD_INGOT
-            amount: 6
+    '19':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: OBSIDIAN
+        amount: 4
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EMERALD
+        amount: 4
+    '20':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_GOLEM_SPAWN_EGG
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 64
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 64
+  snapshots: []
+'2':
+  uniqueId: c22c458b-b31a-49b4-bf3e-79e67d9d2620
+  world: bedwars
+  x: -60
+  y: -19
+  z: -8
+  yaw: 359.30734
+  type: admin
+  name: ITEM SHOP
+  object:
+    type: villager
+    baby: false
+    profession: CLERIC
+    villagerType: SNOW
+    villagerLevel: 5
+  recipes:
+    '1':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: BLUE_WOOL
+        amount: 16
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 4
+    '2':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: END_STONE
+        amount: 12
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 24
+    '3':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: SPRUCE_PLANKS
+        amount: 16
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 4
+    '4':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: STONE_SWORD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 10
+    '5':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_SWORD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 7
+    '6':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: FIRE_CHARGE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 40
+    '7':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_leaping
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EMERALD
+    '8':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:strong_swiftness
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EMERALD
+    '9':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: POTION
+        meta:
+          ==: ItemMeta
+          meta-type: POTION
+          potion-type: minecraft:invisibility
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EMERALD
+        amount: 2
+    '10':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: DIAMOND_SWORD
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EMERALD
+        amount: 4
+    '11':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLDEN_APPLE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 3
+    '12':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: WATER_BUCKET
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 4
+    '13':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: BOW
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 16
+    '14':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: ARROW
+        amount: 16
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 2
+    '15':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: STONE_PICKAXE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 10
+    '16':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_PICKAXE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 20
+    '17':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLDEN_PICKAXE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 3
+    '18':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: DIAMOND_PICKAXE
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: GOLD_INGOT
+        amount: 6
+    '19':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: OBSIDIAN
+        amount: 4
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: EMERALD
+        amount: 4
+    '20':
+      resultItem:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_GOLEM_SPAWN_EGG
+      item1:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 64
+      item2:
+        ==: org.bukkit.inventory.ItemStack
+        v: 3578
+        type: IRON_INGOT
+        amount: 64
+  snapshots: []
+

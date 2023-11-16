@@ -1,0 +1,3 @@
+on block damaging:
+  event-block is not red bed, red wool, blue wool, yellow wool, magenta wool, cyan wool, end stone, spruce planks or obsidian
+  cancel the event
