@@ -306,6 +306,7 @@
       "cookie": "2023-11-14 16:49:26 +0100",
       "cooked_mutton": "2023-11-14 17:12:29 +0100",
       "cooked_beef": "2023-11-12 11:30:55 +0100",
+      "baked_potato": "2023-11-18 22:16:00 +0100",
       "melon_slice": "2023-11-12 11:34:12 +0100"
     },
     "done": false
@@ -739,16 +740,19 @@
   "minecraft:adventure/kill_all_mobs": {
     "criteria": {
       "minecraft:blaze": "2023-11-12 12:55:25 +0100",
-      "minecraft:cave_spider": "2023-11-12 11:24:43 +0100",
+      "minecraft:pillager": "2023-11-18 22:44:20 +0100",
       "minecraft:skeleton": "2023-11-12 11:32:48 +0100",
+      "minecraft:ravager": "2023-11-18 22:55:51 +0100",
+      "minecraft:hoglin": "2023-11-13 20:29:25 +0100",
+      "minecraft:cave_spider": "2023-11-12 11:24:43 +0100",
       "minecraft:piglin": "2023-11-13 20:22:27 +0100",
+      "minecraft:vindicator": "2023-11-18 22:45:07 +0100",
       "minecraft:silverfish": "2023-11-12 12:57:52 +0100",
       "minecraft:enderman": "2023-11-12 13:07:23 +0100",
       "minecraft:spider": "2023-11-12 11:22:39 +0100",
       "minecraft:zombie": "2023-11-12 11:21:43 +0100",
       "minecraft:creeper": "2023-11-12 12:56:35 +0100",
-      "minecraft:slime": "2023-11-12 11:36:15 +0100",
-      "minecraft:hoglin": "2023-11-13 20:29:25 +0100"
+      "minecraft:slime": "2023-11-12 11:36:15 +0100"
     },
     "done": false
   },
@@ -1863,15 +1867,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/bookshelf": {
-    "criteria": {
-      "has_book": "2023-11-14 21:11:23 +0100"
-    },
-    "done": true
-  },
   "minecraft:story/shiny_gear": {
     "criteria": {
       "diamond_boots": "2023-11-14 21:10:41 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2023-11-14 21:11:23 +0100"
     },
     "done": true
   },
@@ -1887,15 +1891,57 @@
     },
     "done": true
   },
+  "minecraft:recipes/misc/writable_book": {
+    "criteria": {
+      "has_book": "2023-11-14 21:11:23 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/misc/red_dye_from_poppy": {
     "criteria": {
       "has_poppy": "2023-11-14 21:11:27 +0100"
     },
     "done": true
   },
-  "minecraft:recipes/misc/writable_book": {
+  "minecraft:recipes/decorations/composter": {
     "criteria": {
-      "has_book": "2023-11-14 21:11:23 +0100"
+      "has_wood_slab": "2023-11-18 22:56:49 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2023-11-18 22:21:23 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/emerald_block": {
+    "criteria": {
+      "has_emerald": "2023-11-18 22:46:28 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/voluntary_exile": {
+    "criteria": {
+      "voluntary_exile": "2023-11-18 22:45:07 +0100"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/axolotl_in_a_bucket": {
+    "criteria": {
+      "axolotl_bucket": "2023-11-18 22:14:25 +0100"
+    },
+    "done": true
+  },
+  "minecraft:adventure/hero_of_the_village": {
+    "criteria": {
+      "hero_of_the_village": "2023-11-18 23:03:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/anvil": {
+    "criteria": {
+      "has_iron_block": "2023-11-18 22:21:23 +0100"
     },
     "done": true
   },
