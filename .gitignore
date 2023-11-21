@@ -1,5 +1,4 @@
 paper.jar
-plugins/*.jar
 cache/*.jar
 bedwars/
 bedwars_nether/
@@ -7,3 +6,9 @@ bedwars_the_end/
 duelsmc/
 duelsmc_nether/
 duelsmc_the_end/
+acnmap/
+acnmap_the_end/
+acnmap_nether/
+tetris/
+tetris_the_end/
+tetris_nether/
