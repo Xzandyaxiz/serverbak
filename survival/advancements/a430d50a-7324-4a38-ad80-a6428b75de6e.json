@@ -398,6 +398,7 @@
   },
   "minecraft:husbandry/balanced_diet": {
     "criteria": {
+      "apple": "2023-11-23 16:31:36 +0100",
       "bread": "2023-11-11 18:51:22 +0100",
       "rotten_flesh": "2023-11-11 18:54:58 +0100",
       "cookie": "2023-11-17 16:06:26 +0100",
@@ -2625,21 +2626,15 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/bookshelf": {
-    "criteria": {
-      "has_book": "2023-11-20 16:48:34 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
-    "criteria": {
-      "has_iron_block": "2023-11-20 16:51:28 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/emerald_block": {
     "criteria": {
       "has_emerald": "2023-11-20 16:45:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/bookshelf": {
+    "criteria": {
+      "has_book": "2023-11-20 16:48:34 +0100"
     },
     "done": true
   },
@@ -2664,6 +2659,12 @@
   "minecraft:adventure/trade": {
     "criteria": {
       "traded": "2023-11-20 16:49:07 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/iron_ingot_from_iron_block": {
+    "criteria": {
+      "has_iron_block": "2023-11-20 16:51:28 +0100"
     },
     "done": true
   },

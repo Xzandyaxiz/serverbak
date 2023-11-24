@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "101a1cf0-3513-4cc1-b2b3-37403c142a7c",
+    "name": "AverageLoaf",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "496e7295-e310-4bb0-a1e2-335675dbdd6c",
     "name": "Xyandzaxis",
     "level": 4,

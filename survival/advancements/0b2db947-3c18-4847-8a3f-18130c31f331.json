@@ -8,6 +8,7 @@
   "minecraft:adventure/adventuring_time": {
     "criteria": {
       "minecraft:cold_ocean": "2023-11-20 16:45:37 +0100",
+      "minecraft:snowy_slopes": "2023-11-21 19:21:35 +0100",
       "minecraft:forest": "2023-11-11 18:36:38 +0100",
       "minecraft:deep_ocean": "2023-11-11 20:36:12 +0100",
       "minecraft:lush_caves": "2023-11-11 17:40:26 +0100",
@@ -18,6 +19,7 @@
       "minecraft:jungle": "2023-11-11 17:32:45 +0100",
       "minecraft:ocean": "2023-11-11 20:36:19 +0100",
       "minecraft:cherry_grove": "2023-11-20 17:03:50 +0100",
+      "minecraft:sunflower_plains": "2023-11-21 19:22:59 +0100",
       "minecraft:birch_forest": "2023-11-14 16:25:32 +0100",
       "minecraft:wooded_badlands": "2023-11-11 19:50:41 +0100",
       "minecraft:bamboo_jungle": "2023-11-14 16:28:29 +0100",
@@ -34,6 +36,7 @@
       "minecraft:stony_shore": "2023-11-14 16:46:40 +0100",
       "minecraft:dripstone_caves": "2023-11-20 16:47:34 +0100",
       "minecraft:swamp": "2023-11-14 16:20:42 +0100",
+      "minecraft:grove": "2023-11-21 19:22:17 +0100",
       "minecraft:meadow": "2023-11-20 16:55:27 +0100",
       "minecraft:savanna": "2023-11-11 20:12:29 +0100",
       "minecraft:plains": "2023-11-11 20:13:25 +0100"
@@ -57,6 +60,7 @@
       "minecraft:pillager": "2023-11-18 22:45:26 +0100",
       "minecraft:blaze": "2023-11-19 20:08:51 +0100",
       "minecraft:skeleton": "2023-11-17 16:15:09 +0100",
+      "minecraft:piglin": "2023-11-23 16:44:25 +0100",
       "minecraft:enderman": "2023-11-17 16:17:13 +0100",
       "minecraft:spider": "2023-11-11 18:46:14 +0100",
       "minecraft:zombie": "2023-11-11 17:34:00 +0100",
@@ -1330,6 +1334,8 @@
   "minecraft:nether/explore_nether": {
     "criteria": {
       "minecraft:crimson_forest": "2023-11-17 22:48:30 +0100",
+      "minecraft:nether_wastes": "2023-11-23 16:41:06 +0100",
+      "minecraft:soul_sand_valley": "2023-11-23 16:41:14 +0100",
       "minecraft:warped_forest": "2023-11-11 19:03:55 +0100"
     },
     "done": false
@@ -2762,6 +2768,24 @@
     },
     "done": true
   },
+  "minecraft:recipes/building_blocks/cherry_planks": {
+    "criteria": {
+      "has_log": "2023-11-20 17:04:07 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/cherry_wood": {
+    "criteria": {
+      "has_log": "2023-11-20 17:04:07 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/red_glazed_terracotta": {
+    "criteria": {
+      "has_red_terracotta": "2023-11-20 17:07:35 +0100"
+    },
+    "done": true
+  },
   "minecraft:recipes/building_blocks/lime_terracotta": {
     "criteria": {
       "has_terracotta": "2023-11-20 17:07:36 +0100"
@@ -2774,18 +2798,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/food/cooked_porkchop": {
-    "criteria": {
-      "has_porkchop": "2023-11-20 17:17:34 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/light_gray_glazed_terracotta": {
-    "criteria": {
-      "has_light_gray_terracotta": "2023-11-20 17:07:56 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/white_terracotta": {
     "criteria": {
       "has_terracotta": "2023-11-20 17:07:36 +0100"
@@ -2795,24 +2807,6 @@
   "minecraft:recipes/building_blocks/orange_terracotta": {
     "criteria": {
       "has_terracotta": "2023-11-20 17:07:36 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/white_glazed_terracotta": {
-    "criteria": {
-      "has_white_terracotta": "2023-11-20 17:07:53 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/orange_glazed_terracotta": {
-    "criteria": {
-      "has_orange_terracotta": "2023-11-20 17:07:40 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/decorations/red_glazed_terracotta": {
-    "criteria": {
-      "has_red_terracotta": "2023-11-20 17:07:35 +0100"
     },
     "done": true
   },
@@ -2846,24 +2840,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cherry_planks": {
-    "criteria": {
-      "has_log": "2023-11-20 17:04:07 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
-    "criteria": {
-      "has_porkchop": "2023-11-20 17:17:34 +0100"
-    },
-    "done": true
-  },
-  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
-    "criteria": {
-      "has_porkchop": "2023-11-20 17:17:34 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/blue_terracotta": {
     "criteria": {
       "has_terracotta": "2023-11-20 17:07:36 +0100"
@@ -2894,12 +2870,6 @@
     },
     "done": true
   },
-  "minecraft:recipes/building_blocks/cherry_wood": {
-    "criteria": {
-      "has_log": "2023-11-20 17:04:07 +0100"
-    },
-    "done": true
-  },
   "minecraft:recipes/building_blocks/green_terracotta": {
     "criteria": {
       "has_terracotta": "2023-11-20 17:07:36 +0100"
@@ -2909,6 +2879,60 @@
   "minecraft:recipes/building_blocks/brown_terracotta": {
     "criteria": {
       "has_terracotta": "2023-11-20 17:07:36 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/orange_glazed_terracotta": {
+    "criteria": {
+      "has_orange_terracotta": "2023-11-20 17:07:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/white_glazed_terracotta": {
+    "criteria": {
+      "has_white_terracotta": "2023-11-20 17:07:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/light_gray_glazed_terracotta": {
+    "criteria": {
+      "has_light_gray_terracotta": "2023-11-20 17:07:56 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop": {
+    "criteria": {
+      "has_porkchop": "2023-11-20 17:17:34 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_campfire_cooking": {
+    "criteria": {
+      "has_porkchop": "2023-11-20 17:17:34 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/food/cooked_porkchop_from_smoking": {
+    "criteria": {
+      "has_porkchop": "2023-11-20 17:17:34 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/misc/bone_meal_from_bone_block": {
+    "criteria": {
+      "has_bone_block": "2023-11-23 16:41:55 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_campfire": {
+    "criteria": {
+      "has_soul_sand": "2023-11-23 16:42:48 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/soul_torch": {
+    "criteria": {
+      "has_soul_sand": "2023-11-23 16:42:48 +0100"
     },
     "done": true
   },
