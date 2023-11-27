@@ -1,104 +1,84 @@
-[17:19:00] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[17:19:01] [ServerMain/INFO]: Loaded 7 recipes
-[17:19:01] [Server thread/INFO]: Starting minecraft server version 1.20.2
-[17:19:01] [Server thread/INFO]: Loading properties
-[17:19:01] [Server thread/INFO]: This server is running Paper version git-Paper-279 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 274e54b)
-[17:19:01] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:19:01] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:19:01] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[20:59:37] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20:59:37] [ServerMain/INFO]: Loaded 7 recipes
+[20:59:37] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[20:59:37] [Server thread/INFO]: Loading properties
+[20:59:37] [Server thread/INFO]: This server is running Paper version git-Paper-279 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 274e54b)
+[20:59:38] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[20:59:38] [Server thread/INFO]: Using 4 threads for Netty based IO
+[20:59:38] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[17:19:01] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[17:19:02] [Server thread/INFO]: Default game type: SURVIVAL
-[17:19:02] [Server thread/INFO]: Generating keypair
-[17:19:02] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:19:02] [Server thread/INFO]: Using epoll channel type
-[17:19:02] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[17:19:02] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[17:19:02] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.2
-[17:19:02] [Server thread/INFO]: [SkBee] Loading server plugin SkBee v2.18.4
-[17:19:02] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:19:02] [Server thread/INFO]: Preparing level "survival"
-[17:19:02] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:19:02] [Server thread/INFO]: Time elapsed: 141 ms
-[17:19:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:19:02] [Server thread/INFO]: Time elapsed: 18 ms
-[17:19:02] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:19:02] [Server thread/INFO]: Time elapsed: 10 ms
-[17:19:02] [Server thread/INFO]: [Skript] Enabling Skript v2.7.2
-[17:19:03] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[17:19:06] [Server thread/INFO]: [Skript] Loaded 232530 aliases in 3178ms
-[17:19:06] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[17:19:06] [Server thread/INFO]: [SkBee] Enabling SkBee v2.18.4
-[17:19:06] [Server thread/INFO]: [SkBee] Loading NBTApi...
-[17:19:06] [Server thread/INFO]: [SkBee] [NBTAPI] Found Spigot: v1_20_R2! Trying to find NMS support
-[17:19:06] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_20_R2' loaded!
-[17:19:06] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
-[17:19:06] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
-[17:19:06] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
-[17:19:06] [Server thread/INFO]: [SkBee] Advancement Elements successfully loaded
-[17:19:06] [Server thread/INFO]: [SkBee] BossBar Elements successfully loaded
-[17:19:06] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
-[17:19:06] [Server thread/INFO]: [SkBee] Display Entity elements successfully loaded
-[17:19:06] [Server thread/INFO]: [SkBee] Fishing elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Particle Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] RayTrace elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Scoreboard Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Scoreboard Objective Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Statistic Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Structure Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Minecraft Tag elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Team Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Villager Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
-[17:19:07] [Server thread/INFO]: [SkBee] World Border Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] It looks like another addon registered 'environment' already.
-[17:19:07] [Server thread/INFO]: [SkBee] You may have to use their environment options in SkBee's 'world creator' system.
-[17:19:07] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
-[17:19:07] [Server thread/INFO]: [SkBee] Loaded (355) elements:
-[17:19:07] [Server thread/INFO]: [SkBee]  - 49 events
-[17:19:07] [Server thread/INFO]: [SkBee]  - 52 effects
-[17:19:07] [Server thread/INFO]: [SkBee]  - 228 expressions
-[17:19:07] [Server thread/INFO]: [SkBee]  - 23 conditions
-[17:19:07] [Server thread/INFO]: [SkBee]  - 3 sections
-[17:19:07] [Server thread/INFO]: [SkBee] Checking for update...
-[17:19:07] [Server thread/INFO]: [SkBee] Plugin is up to date!
-[17:19:07] [Server thread/INFO]: [SkBee] Successfully enabled v2.18.4 in 0.41 seconds
-[17:19:07] [Server thread/INFO]: Running delayed init tasks
-[17:19:07] [Server thread/INFO]: [Skript] Loading variables...
-[17:19:07] [Server thread/INFO]: [Skript] Loaded 10018 variables in 0.1 seconds
-[17:19:07] [Server thread/INFO]: [Skript] All scripts loaded without errors.
-[17:19:07] [Server thread/INFO]: [Skript] Loaded 3 scripts with a total of 6 structures in 0.09 seconds
-[17:19:07] [Server thread/INFO]: [Skript] Finished loading.
-[17:19:07] [Server thread/INFO]: Done (5.889s)! For help, type "help"
-[17:19:07] [Server thread/INFO]: Timings Reset
-[17:37:30] [Server thread/INFO]: Stopping the server
-[17:37:30] [Server thread/INFO]: Stopping server
-[17:37:30] [Server thread/INFO]: [SkBee] Disabling SkBee v2.18.4
-[17:37:30] [Server thread/INFO]: [Skript] Disabling Skript v2.7.2
-[17:37:31] [Server thread/INFO]: Saving players
-[17:37:31] [Server thread/INFO]: Saving worlds
-[17:37:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival]'/minecraft:overworld
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 103 entity chunks, 0 poi chunks in world 'survival' in 0.02s
-[17:37:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (survival): All chunks are saved
-[17:37:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival_nether]'/minecraft:the_nether
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival_nether'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival_nether'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival_nether'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Saved 69 block chunks, 128 entity chunks, 0 poi chunks in world 'survival_nether' in 0.06s
-[17:37:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[17:37:31] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival_the_end]'/minecraft:the_end
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival_the_end'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival_the_end'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival_the_end'
-[17:37:31] [Server thread/INFO]: [ChunkHolderManager] Saved 5 block chunks, 49 entity chunks, 0 poi chunks in world 'survival_the_end' in 0.00s
-[17:37:31] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[17:37:31] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[17:37:31] [Server thread/INFO]: Flushing Chunk IO
-[17:37:31] [Server thread/INFO]: Closing Thread Pool
-[17:37:31] [Server thread/INFO]: Closing Server
+[20:59:38] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[20:59:38] [Server thread/INFO]: Default game type: SURVIVAL
+[20:59:38] [Server thread/INFO]: Generating keypair
+[20:59:38] [Server thread/INFO]: Starting Minecraft server on *:25565
+[20:59:38] [Server thread/INFO]: Using epoll channel type
+[20:59:38] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[20:59:38] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[20:59:38] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.2
+[20:59:38] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[20:59:38] [Server thread/INFO]: Preparing level "survival"
+[20:59:38] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[20:59:39] [Server thread/INFO]: Time elapsed: 207 ms
+[20:59:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[20:59:39] [Server thread/INFO]: Time elapsed: 25 ms
+[20:59:39] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[20:59:39] [Server thread/INFO]: Time elapsed: 21 ms
+[20:59:39] [Server thread/INFO]: [Skript] Enabling Skript v2.7.2
+[20:59:40] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
+[20:59:43] [Server thread/INFO]: [Skript] Loaded 232530 aliases in 3212ms
+[20:59:43] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[20:59:43] [Server thread/INFO]: Running delayed init tasks
+[20:59:43] [Server thread/INFO]: [Skript] Loading variables...
+[20:59:43] [Server thread/INFO]: [Skript] Loaded 10018 variables in 0.1 seconds
+[20:59:43] [Server thread/INFO]: [Skript] All scripts loaded without errors.
+[20:59:43] [Server thread/INFO]: [Skript] Loaded 3 scripts with a total of 6 structures in 0.08 seconds
+[20:59:43] [Server thread/INFO]: [Skript] Finished loading.
+[20:59:43] [Server thread/INFO]: Done (5.846s)! For help, type "help"
+[20:59:43] [Server thread/INFO]: Timings Reset
+[20:59:58] [User Authenticator #0/INFO]: UUID of player Xyandzaxis is 496e7295-e310-4bb0-a1e2-335675dbdd6c
+[20:59:59] [Server thread/INFO]: Xyandzaxis joined the game
+[20:59:59] [Server thread/INFO]: Xyandzaxis[/[0:0:0:0:0:0:0:1%0]:57846] logged in with entity id 1108 at ([survival]-167.71798791458627, 55.5625, -18.29662803670325)
+[21:01:38] [User Authenticator #1/INFO]: UUID of player AverageLoaf is 101a1cf0-3513-4cc1-b2b3-37403c142a7c
+[21:01:38] [Server thread/INFO]: AverageLoaf joined the game
+[21:01:38] [Server thread/INFO]: AverageLoaf[/195.67.215.236:48184] logged in with entity id 1599 at ([survival]-2.392744554042037, 46.0, -70.53836391147539)
+[21:12:06] [User Authenticator #2/INFO]: UUID of player LundqvistAxel is a430d50a-7324-4a38-ad80-a6428b75de6e
+[21:12:06] [Server thread/INFO]: LundqvistAxel joined the game
+[21:12:06] [Server thread/INFO]: LundqvistAxel[/100.76.102.34:49387] logged in with entity id 3856 at ([survival]-292.4457961711693, 108.0, 711.6160871654815)
+[21:14:47] [Server thread/INFO]: LundqvistAxel was doomed to fall by AverageLoaf
+[21:22:55] [Server thread/INFO]: LundqvistAxel was slain by Vindicator
+[21:28:27] [Server thread/INFO]: LundqvistAxel has completed the challenge [Hero of the Village]
+[21:29:32] [Server thread/INFO]: LundqvistAxel has made the advancement [Ol' Betsy]
+[21:29:58] [Server thread/INFO]: AverageLoaf lost connection: Disconnected
+[21:29:58] [Server thread/INFO]: AverageLoaf left the game
+[21:30:19] [Server thread/INFO]: Xyandzaxis lost connection: Disconnected
+[21:30:19] [Server thread/INFO]: Xyandzaxis left the game
+[21:30:24] [Server thread/INFO]: LundqvistAxel lost connection: Disconnected
+[21:30:24] [Server thread/INFO]: LundqvistAxel left the game
+[21:30:25] [Server thread/INFO]: Stopping the server
+[21:30:25] [Server thread/INFO]: Stopping server
+[21:30:25] [Server thread/INFO]: [Skript] Disabling Skript v2.7.2
+[21:30:25] [Server thread/INFO]: Saving players
+[21:30:26] [Server thread/INFO]: Saving worlds
+[21:30:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival]'/minecraft:overworld
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Saved 39 block chunks, 264 entity chunks, 1 poi chunks in world 'survival' in 0.06s
+[21:30:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (survival): All chunks are saved
+[21:30:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival_nether]'/minecraft:the_nether
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival_nether'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival_nether'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival_nether'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Saved 64 block chunks, 143 entity chunks, 0 poi chunks in world 'survival_nether' in 0.05s
+[21:30:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[21:30:26] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival_the_end]'/minecraft:the_end
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival_the_end'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival_the_end'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival_the_end'
+[21:30:26] [Server thread/INFO]: [ChunkHolderManager] Saved 0 block chunks, 43 entity chunks, 0 poi chunks in world 'survival_the_end' in 0.00s
+[21:30:26] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[21:30:26] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[21:30:26] [Server thread/INFO]: Flushing Chunk IO
+[21:30:26] [Server thread/INFO]: Closing Thread Pool
+[21:30:26] [Server thread/INFO]: Closing Server
