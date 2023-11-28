@@ -7,30 +7,32 @@
   },
   "minecraft:adventure/adventuring_time": {
     "criteria": {
-      "minecraft:savanna_plateau": "2023-11-11 17:01:36 +0100",
+      "minecraft:cold_ocean": "2023-11-28 19:25:53 +0100",
       "minecraft:snowy_slopes": "2023-11-20 17:51:33 +0100",
-      "minecraft:beach": "2023-11-11 14:05:04 +0100",
       "minecraft:forest": "2023-11-11 15:15:16 +0100",
-      "minecraft:sparse_jungle": "2023-11-12 13:37:24 +0100",
-      "minecraft:lukewarm_ocean": "2023-11-11 14:05:35 +0100",
-      "minecraft:river": "2023-11-11 15:00:55 +0100",
-      "minecraft:stony_shore": "2023-11-12 13:38:05 +0100",
       "minecraft:lush_caves": "2023-11-11 14:05:23 +0100",
-      "minecraft:dripstone_caves": "2023-11-11 17:01:57 +0100",
-      "minecraft:old_growth_birch_forest": "2023-11-12 17:11:33 +0100",
+      "minecraft:deep_cold_ocean": "2023-11-28 19:25:58 +0100",
       "minecraft:desert": "2023-11-11 15:01:04 +0100",
-      "minecraft:deep_dark": "2023-11-20 17:56:46 +0100",
       "minecraft:jungle": "2023-11-11 14:04:41 +0100",
       "minecraft:ocean": "2023-11-15 14:59:19 +0100",
       "minecraft:cherry_grove": "2023-11-20 17:51:00 +0100",
       "minecraft:sunflower_plains": "2023-11-20 17:51:28 +0100",
-      "minecraft:meadow": "2023-11-20 17:55:13 +0100",
       "minecraft:birch_forest": "2023-11-12 17:10:33 +0100",
-      "minecraft:savanna": "2023-11-11 16:59:41 +0100",
       "minecraft:wooded_badlands": "2023-11-16 19:00:22 +0100",
       "minecraft:bamboo_jungle": "2023-11-26 17:25:36 +0100",
-      "minecraft:plains": "2023-11-11 16:58:07 +0100",
-      "minecraft:warm_ocean": "2023-11-11 15:01:57 +0100"
+      "minecraft:warm_ocean": "2023-11-11 15:01:57 +0100",
+      "minecraft:savanna_plateau": "2023-11-11 17:01:36 +0100",
+      "minecraft:beach": "2023-11-11 14:05:04 +0100",
+      "minecraft:sparse_jungle": "2023-11-12 13:37:24 +0100",
+      "minecraft:lukewarm_ocean": "2023-11-11 14:05:35 +0100",
+      "minecraft:river": "2023-11-11 15:00:55 +0100",
+      "minecraft:stony_shore": "2023-11-12 13:38:05 +0100",
+      "minecraft:dripstone_caves": "2023-11-11 17:01:57 +0100",
+      "minecraft:old_growth_birch_forest": "2023-11-12 17:11:33 +0100",
+      "minecraft:deep_dark": "2023-11-20 17:56:46 +0100",
+      "minecraft:meadow": "2023-11-20 17:55:13 +0100",
+      "minecraft:savanna": "2023-11-11 16:59:41 +0100",
+      "minecraft:plains": "2023-11-11 16:58:07 +0100"
     },
     "done": false
   },
@@ -636,6 +638,7 @@
       "minecraft:ravager": "2023-11-14 19:42:13 +0100",
       "minecraft:ghast": "2023-11-23 16:46:34 +0100",
       "minecraft:hoglin": "2023-11-23 17:29:11 +0100",
+      "minecraft:guardian": "2023-11-28 19:37:49 +0100",
       "minecraft:vindicator": "2023-11-14 19:36:45 +0100",
       "minecraft:magma_cube": "2023-11-23 17:23:44 +0100",
       "minecraft:spider": "2023-11-11 14:12:40 +0100",
@@ -4373,6 +4376,126 @@
   "minecraft:nether/summon_wither": {
     "criteria": {
       "summoned": "2023-11-26 21:27:09 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/spruce_hanging_sign": {
+    "criteria": {
+      "has_stripped_logs": "2023-11-28 19:23:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/stripped_spruce_wood": {
+    "criteria": {
+      "has_log": "2023-11-28 19:23:13 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/sponge": {
+    "criteria": {
+      "has_wet_sponge": "2023-11-28 19:34:45 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_stairs_from_dark_prismarine_stonecutting": {
+    "criteria": {
+      "has_dark_prismarine": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_stairs_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine_brick": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_stairs": {
+    "criteria": {
+      "has_dark_prismarine": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_stairs": {
+    "criteria": {
+      "has_prismarine_bricks": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_slab_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine_brick": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_slab_from_dark_prismarine_stonecutting": {
+    "criteria": {
+      "has_dark_prismarine": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_brick_slab": {
+    "criteria": {
+      "has_prismarine_bricks": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine_slab": {
+    "criteria": {
+      "has_dark_prismarine": "2023-11-28 19:35:42 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/prismarine_wall_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine": "2023-11-28 19:36:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_stairs": {
+    "criteria": {
+      "has_prismarine": "2023-11-28 19:36:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/prismarine_wall": {
+    "criteria": {
+      "has_prismarine": "2023-11-28 19:36:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_slab_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine": "2023-11-28 19:36:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_slab": {
+    "criteria": {
+      "has_prismarine": "2023-11-28 19:36:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_stairs_from_prismarine_stonecutting": {
+    "criteria": {
+      "has_prismarine": "2023-11-28 19:36:10 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2023-11-28 19:37:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/prismarine_bricks": {
+    "criteria": {
+      "has_prismarine_shard": "2023-11-28 19:37:53 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/building_blocks/dark_prismarine": {
+    "criteria": {
+      "has_prismarine_shard": "2023-11-28 19:37:53 +0100"
     },
     "done": true
   },
