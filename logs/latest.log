@@ -1,65 +1,85 @@
-[17:46:14] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[17:46:15] [ServerMain/INFO]: Loaded 7 recipes
-[17:46:15] [Server thread/INFO]: Starting minecraft server version 1.20.2
-[17:46:15] [Server thread/INFO]: Loading properties
-[17:46:15] [Server thread/INFO]: This server is running Paper version git-Paper-279 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 274e54b)
-[17:46:15] [Server thread/INFO]: Server Ping Player Sample Count: 12
-[17:46:15] [Server thread/INFO]: Using 4 threads for Netty based IO
-[17:46:16] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
+[17:50:41] [ServerMain/INFO]: Environment: Environment[accountsHost=https://api.mojang.com, sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[17:50:41] [ServerMain/INFO]: Loaded 7 recipes
+[17:50:42] [Server thread/INFO]: Starting minecraft server version 1.20.2
+[17:50:42] [Server thread/INFO]: Loading properties
+[17:50:42] [Server thread/INFO]: This server is running Paper version git-Paper-279 (MC: 1.20.2) (Implementing API version 1.20.2-R0.1-SNAPSHOT) (Git: 274e54b)
+[17:50:42] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[17:50:42] [Server thread/INFO]: Using 4 threads for Netty based IO
+[17:50:42] [Server thread/WARN]: [!] The timings profiler has been enabled but has been scheduled for removal from Paper in the future.
     We recommend installing the spark profiler as a replacement: https://spark.lucko.me/
     For more information please visit: https://github.com/PaperMC/Paper/issues/8948
-[17:46:16] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
-[17:46:16] [Server thread/INFO]: Default game type: SURVIVAL
-[17:46:16] [Server thread/INFO]: Generating keypair
-[17:46:16] [Server thread/INFO]: Starting Minecraft server on *:25565
-[17:46:16] [Server thread/INFO]: Using epoll channel type
-[17:46:16] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
-[17:46:16] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
-[17:46:16] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.2
-[17:46:16] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
-[17:46:16] [Server thread/INFO]: Preparing level "survival"
-[17:46:16] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
-[17:46:16] [Server thread/INFO]: Time elapsed: 174 ms
-[17:46:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
-[17:46:16] [Server thread/INFO]: Time elapsed: 29 ms
-[17:46:16] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
-[17:46:16] [Server thread/INFO]: Time elapsed: 25 ms
-[17:46:16] [Server thread/INFO]: [Skript] Enabling Skript v2.7.2
-[17:46:17] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] You're currently running the latest stable version of Skript.
-[17:46:21] [Server thread/INFO]: [Skript] Loaded 232530 aliases in 3457ms
-[17:46:21] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
-[17:46:21] [Server thread/INFO]: Running delayed init tasks
-[17:46:21] [Server thread/INFO]: [Skript] Loading variables...
-[17:46:21] [Server thread/INFO]: [Skript] Loaded 10018 variables in 0.1 seconds
-[17:46:21] [Server thread/INFO]: [Skript] All scripts loaded without errors.
-[17:46:21] [Server thread/INFO]: [Skript] Loaded 3 scripts with a total of 6 structures in 0.1 seconds
-[17:46:21] [Server thread/INFO]: [Skript] Finished loading.
-[17:46:21] [Server thread/INFO]: Done (6.197s)! For help, type "help"
-[17:46:21] [Server thread/INFO]: Timings Reset
-[18:53:05] [Server thread/INFO]: Stopping the server
-[18:53:05] [Server thread/INFO]: Stopping server
-[18:53:05] [Server thread/INFO]: [Skript] Disabling Skript v2.7.2
-[18:53:05] [Server thread/INFO]: Saving players
-[18:53:05] [Server thread/INFO]: Saving worlds
-[18:53:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival]'/minecraft:overworld
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Saved 2 block chunks, 100 entity chunks, 0 poi chunks in world 'survival' in 0.02s
-[18:53:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (survival): All chunks are saved
-[18:53:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival_nether]'/minecraft:the_nether
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival_nether'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival_nether'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival_nether'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Saved 55 block chunks, 105 entity chunks, 0 poi chunks in world 'survival_nether' in 0.04s
-[18:53:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[18:53:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[survival_the_end]'/minecraft:the_end
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'survival_the_end'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'survival_the_end'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'survival_the_end'
-[18:53:05] [Server thread/INFO]: [ChunkHolderManager] Saved 5 block chunks, 43 entity chunks, 0 poi chunks in world 'survival_the_end' in 0.01s
-[18:53:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[18:53:05] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
-[18:53:05] [Server thread/INFO]: Flushing Chunk IO
-[18:53:05] [Server thread/INFO]: Closing Thread Pool
-[18:53:05] [Server thread/INFO]: Closing Server
+[17:50:42] [Server thread/INFO]: [ChunkTaskScheduler] Chunk system is using 1 I/O threads, 4 worker threads, and gen parallelism of 4 threads
+[17:50:42] [Server thread/INFO]: Default game type: SURVIVAL
+[17:50:42] [Server thread/INFO]: Generating keypair
+[17:50:42] [Server thread/INFO]: Starting Minecraft server on *:25565
+[17:50:42] [Server thread/INFO]: Using epoll channel type
+[17:50:42] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[17:50:42] [Server thread/INFO]: Paper: Using OpenSSL 3.0.x (Linux x86_64) cipher from Velocity.
+[17:50:43] [Server thread/INFO]: [Skript] Loading server plugin Skript v2.7.2
+[17:50:43] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[17:50:43] [Server thread/INFO]: Preparing level "manhunt"
+[17:50:43] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[17:50:43] [Server thread/INFO]: Time elapsed: 162 ms
+[17:50:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[17:50:43] [Server thread/INFO]: Time elapsed: 34 ms
+[17:50:43] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[17:50:43] [Server thread/INFO]: Time elapsed: 16 ms
+[17:50:43] [Server thread/INFO]: [Skript] Enabling Skript v2.7.2
+[17:50:44] [ForkJoinPool.commonPool-worker-1/INFO]: [Skript] A new version of Skript is available: 2.7.3 (you're currently running 2.7.2)
+[17:50:44] [ForkJoinPool.commonPool-worker-1/INFO]: Download it at: <aqua><u><link:https://github.com/SkriptLang/Skript/releases/download/2.7.3/Skript.jar>https://github.com/SkriptLang/Skript/releases/download/2.7.3/Skript.jar
+[17:50:47] [Server thread/INFO]: [Skript] Loaded 232530 aliases in 3237ms
+[17:50:47] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[17:50:47] [Server thread/INFO]: Running delayed init tasks
+[17:50:47] [Server thread/INFO]: [Skript] Loading variables...
+[17:50:48] [Server thread/INFO]: [Skript] Loaded 10017 variables in 0.1 seconds
+[17:50:48] [Server thread/INFO]: [Skript] Line 42: (bedwars/bed.sk)
+[17:50:48] [Server thread/INFO]:     Can't compare 'display name of {_p}'s team' with a text
+[17:50:48] [Server thread/INFO]:     Line: if display name of {_p}'s team is "Blue":
+[17:50:48] [Server thread/INFO]:  
+[17:50:48] [Server thread/INFO]: [Skript] Line 47: (bedwars/bed.sk)
+[17:50:48] [Server thread/INFO]:     Can't compare 'display name of {_p}'s team' with a text
+[17:50:48] [Server thread/INFO]:     Line: if display name of {_p}'s team is "Red":
+[17:50:48] [Server thread/INFO]:  
+[17:50:48] [Server thread/INFO]: [Skript] Line 91: (bedwars/bed.sk)
+[17:50:48] [Server thread/INFO]:     Can't compare 'display name of {_p}'s team' with a text
+[17:50:48] [Server thread/INFO]:     Line: if display name of {_p}'s team is "Blue":
+[17:50:48] [Server thread/INFO]:  
+[17:50:48] [Server thread/INFO]: [Skript] Line 97: (bedwars/bed.sk)
+[17:50:48] [Server thread/INFO]:     Can't compare 'display name of {_p}'s team' with a text
+[17:50:48] [Server thread/INFO]:     Line: if display name of {_p}'s team is "Red":
+[17:50:48] [Server thread/INFO]:  
+[17:50:48] [Server thread/INFO]: [Skript] Line 12: (bedwars/bed.sk)
+[17:50:48] [Server thread/INFO]:     Can't understand this condition/effect: {team_dead::*} does not contain display name of victim's team
+[17:50:48] [Server thread/INFO]:     Line: {team_dead::*} does not contain display name of victim's team
+[17:50:48] [Server thread/INFO]:  
+[17:50:48] [Server thread/INFO]: [Skript] Loaded 9 scripts with a total of 27 structures in 0.31 seconds
+[17:50:48] [Server thread/INFO]: [Skript] Finished loading.
+[17:50:48] [Server thread/INFO]: Done (6.175s)! For help, type "help"
+[17:50:48] [Server thread/INFO]: Timings Reset
+[17:55:24] [Server thread/INFO]: Stopping the server
+[17:55:24] [Server thread/INFO]: Stopping server
+[17:55:24] [Server thread/INFO]: [Skript] Disabling Skript v2.7.2
+[17:55:24] [Server thread/INFO]: Saving players
+[17:55:24] [Server thread/INFO]: Saving worlds
+[17:55:24] [Server thread/INFO]: Saving chunks for level 'ServerLevel[manhunt]'/minecraft:overworld
+[17:55:24] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'manhunt'
+[17:55:24] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'manhunt'
+[17:55:24] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'manhunt'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'manhunt' in 0.41s
+[17:55:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (manhunt): All chunks are saved
+[17:55:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[manhunt_nether]'/minecraft:the_nether
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'manhunt_nether'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'manhunt_nether'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'manhunt_nether'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'manhunt_nether' in 0.30s
+[17:55:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[17:55:25] [Server thread/INFO]: Saving chunks for level 'ServerLevel[manhunt_the_end]'/minecraft:the_end
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Waiting 60s for chunk system to halt for world 'manhunt_the_end'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Halted chunk system for world 'manhunt_the_end'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Saving all chunkholders for world 'manhunt_the_end'
+[17:55:25] [Server thread/INFO]: [ChunkHolderManager] Saved 529 block chunks, 529 entity chunks, 0 poi chunks in world 'manhunt_the_end' in 0.05s
+[17:55:25] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[17:55:25] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[17:55:25] [Server thread/INFO]: Flushing Chunk IO
+[17:55:25] [Server thread/INFO]: Closing Thread Pool
+[17:55:25] [Server thread/INFO]: Closing Server

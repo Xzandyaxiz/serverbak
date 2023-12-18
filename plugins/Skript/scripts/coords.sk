@@ -1,3 +1,0 @@
-command /coords:
-  trigger:
-    broadcast "%player's name%: §a%player's x location%  %player's y location%  %player's z location%"

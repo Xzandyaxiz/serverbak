@@ -698,6 +698,7 @@
       "minecraft:witch": "2023-11-27 21:22:02 +0100",
       "minecraft:wither_skeleton": "2023-11-19 20:13:23 +0100",
       "minecraft:ravager": "2023-11-27 21:25:10 +0100",
+      "minecraft:ender_dragon": "2023-12-03 16:26:40 +0100",
       "minecraft:hoglin": "2023-11-19 19:56:31 +0100",
       "minecraft:shulker": "2023-11-19 20:36:12 +0100",
       "minecraft:vindicator": "2023-11-27 21:20:44 +0100",
@@ -2839,6 +2840,30 @@
   "minecraft:recipes/misc/gold_ingot_from_gold_block": {
     "criteria": {
       "has_gold_block": "2023-11-28 16:33:19 +0100"
+    },
+    "done": true
+  },
+  "minecraft:end/respawn_dragon": {
+    "criteria": {
+      "summoned_dragon": "2023-12-03 16:20:14 +0100"
+    },
+    "done": true
+  },
+  "minecraft:end/kill_dragon": {
+    "criteria": {
+      "killed_dragon": "2023-12-03 16:26:40 +0100"
+    },
+    "done": true
+  },
+  "minecraft:story/form_obsidian": {
+    "criteria": {
+      "obsidian": "2023-12-03 16:34:37 +0100"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/enchanting_table": {
+    "criteria": {
+      "has_obsidian": "2023-12-03 16:34:37 +0100"
     },
     "done": true
   },

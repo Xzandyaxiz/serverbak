@@ -1,3 +1,0 @@
-command /scramble <type> <number> <number>:
-  trigger:
-    send "Hi!" to player

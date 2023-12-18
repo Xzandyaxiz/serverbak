@@ -123,7 +123,7 @@ unsupported-settings:
   allow-grindstone-overstacking: false
   allow-headless-pistons: false
   allow-permanent-block-break-exploits: false
-  allow-piston-duplication: false
+  allow-piston-duplication: true
   compression-format: ZLIB
   perform-username-validation: true
 watchdog:
